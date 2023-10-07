@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="120dp" android:minHeight="50dp" app:cardBackgroundColor="#f9f5f4" app:cardCornerRadius="4dp" app:cardElevation="5dp" app:cardMaxElevation="4dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+    <RelativeLayout android:id="@+id/item_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.xeagle.android.camera.widgets.RoundImageView android:id="@+id/thumbImage" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/placeholder" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:borderRadius="4dp" app:type="radial"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@+id/title_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@+id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+                <TextView android:textStyle="bold" android:id="@+id/file_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <CheckBox android:id="@+id/mul_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

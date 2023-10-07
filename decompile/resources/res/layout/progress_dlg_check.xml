@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="#80000000" app:cardCornerRadius="8dp" app:cardElevation="8dp">
+    <RelativeLayout android:background="@drawable/dialog_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14sp" android:textColor="#ffcc00" android:id="@+id/notify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="message title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Base.Widget.AppCompat.ProgressBar"/>
+            <TextView android:textColor="@color/white" android:id="@+id/notify_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="..." android:singleLine="false" android:layout_toRightOf="@+id/progress_bar" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

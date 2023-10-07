@@ -1,0 +1,64 @@
+syntax = "proto3";
+option java_package = "com.myusb.proxy.proto";
+option optimize_for = LITE_RUNTIME;
+
+enum ConnType {
+  TCP = 0;
+  UDP = 1;
+  RELAY = 2;
+  FTP = 3;
+  HTTP = 4;
+  RTSP = 5;
+  TTY = 6;
+}
+
+enum MsgType {
+  CONNECT = 0;
+  SEND = 1;
+  RECV = 2;
+  CLOSE = 3;
+  ERROR = 4;
+  CREATE = 5;
+  RESULT = 6;
+  CLOSE_ALL = 7;
+  USB_HEART_BEAT = 8;
+  RELAY_VERSION = 9;
+  RELAY_WIFI_RENAME = 10;
+  RELAY_WIFI_STRENGTH = 11;
+  RELAY_WIFI_LIST = 12;
+  RELAY_WIFI_UPDATE = 13;
+  RELAY_WIFI_VERSION = 14;
+  RTSP_START = 15;
+  RTSP_STOP = 16;
+  FTP_DELETE_FILE = 17;
+  FTP_DOWNLOAD_START = 18;
+  FTP_DOWNLOAD_STOP = 19;
+  FTP_UPLOAD_START = 20;
+  FTP_UPLOAD_STOP = 21;
+  HTTP_PROGRESS = 22;
+  TTY_VERSION = 23;
+  TTY_ENABLE_POWER = 24;
+  TTY_SWTICH_METHOD = 25;
+  CREATE_ERROR = 26;
+  CONNECT_ERROR = 27;
+  SEND_ERROR = 28;
+  CLOSE_ERROR = 29;
+}
+
+message MsgData {
+  int32 arg1 = 1;
+  int32 arg2 = 2;
+  string arg3 = 3;
+  bytes arg4 = 4;
+}
+
+message ProxyMsg {
+  int32 msgId = 1;
+  int32 ackId = 2;
+  int32 connId = 3;
+  ConnType connType = 4;
+  MsgType msgType = 5;
+  string ip = 6;
+  int32 port = 7;
+  MsgData data = 8;
+}

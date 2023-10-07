@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="@dimen/pop_dialog_width" android:layout_height="wrap_content">
+    <TextView android:id="@+id/tvDialogTitle" android:text="@string/deletefile_tip" style="@style/dialog_title"/>
+    <View style="@style/dialog_title_line"/>
+    <TextView android:textSize="18sp" android:textColor="@color/dialog_item_text" android:gravity="center_horizontal" android:id="@+id/tvDialogMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="48dp" android:text="@string/deletefile_msg"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btnDialogCancel" android:text="@string/cancel" style="@style/dialog_button_left"/>
+        <Button android:id="@+id/btnDialogOK" android:text="@string/action_delete" style="@style/dialog_button_right"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/opaque_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xeagle.android.widgets.spinners.SpinnerSelfSelect android:entries="@array/ExampleWaypointType" android:id="@+id/spinnerWaypointType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroupSpeed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp">
+                <TextView android:id="@+id/textViewSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waypoint_speedtype"/>
+                <RadioButton android:id="@+id/radioAirSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waypoint_airspeed"/>
+                <RadioButton android:id="@+id/radioGroundSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/waypoint_groundspeed"/>
+            </RadioGroup>
+            <org.droidplanner.android.widgets.SeekBarWithText.SeekBarWithText android:id="@+id/waypointSpeed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp" app:inc="1" app:max="100" app:min="-1" app:title="@string/waypoint_speed" app:unit="m/s"/>
+            <org.droidplanner.android.widgets.SeekBarWithText.SeekBarWithText android:id="@+id/waypointThrottle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp" app:inc="1" app:max="100" app:min="-1" app:title="@string/waypoint_throttle" app:unit="%"/>
+            <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waypointInfo_SetSpeed" style="@style/ModeDetailText"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

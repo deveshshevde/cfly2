@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.xeagle.android.fragments.helpers.GestureMapFragment" android:id="@+id/gestureMapFragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:id="@+id/editorInfoWindow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/editor_info_window" android:layout_alignParentTop="true" style="@style/editorMissionOverviewText"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_failsfae" android:background="#d8ee2d3e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/failsafeImageView" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/armr" android:layout_weight="1"/>
+            <TextView android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/failsafeTextView" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="4" style="@style/editorMissionOverviewText"/>
+        </LinearLayout>
+        <include android:id="@+id/editorSplineToggleContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/editorInfoWindow" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" layout="@layout/editor_spline_toggle"/>
+        <include android:id="@+id/float_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" android:layout_below="@+id/editorInfoWindow" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" layout="@layout/editor_float_button"/>
+        <ImageButton android:id="@+id/flight_data" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:src="@drawable/tab_img_video" android:layout_below="@+id/float_button" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <fragment android:name="com.xeagle.android.fragments.EditorToolsFragment" android:id="@+id/flightActionsFragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <fragment android:name="com.xeagle.android.fragments.EditorListFragment" android:id="@+id/missionFragment1" android:layout_width="match_parent" android:layout_height="@dimen/editor_mission_fragment_height"/>
+    </FrameLayout>
+</RelativeLayout>

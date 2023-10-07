@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_fly_setting" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_fly_close" android:background="@color/transparency" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/newui_fly_close" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_setting_drone" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:gravity="center" android:id="@+id/ll_settting_compass_calibration" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_setting" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/gray" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_setting_base"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/fence_ll" android:layout_width="match_parent" android:layout_height="90dp">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_beginner_title" android:layout_weight="1"/>
+                        <com.xeagle.android.newUI.widgets.NiceSwitchButton android:id="@+id/beginner_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sb_background="@color/transparency" app:sb_checked_color="@color/colorAccent_blue"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/setting_text_description" android:textColor="@color/gray" android:id="@+id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_beginner_description" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/switch_button"/>
+                </LinearLayout>
+                <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/lt_landscape" android:layout_width="match_parent" android:layout_height="90dp">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/landscape_mode" android:layout_weight="1"/>
+                    <com.xeagle.android.newUI.widgets.NiceSwitchButton android:id="@+id/landscape_or_vertical_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sb_background="@color/transparency" app:sb_checked_color="@color/colorAccent_blue"/>
+                </LinearLayout>
+                <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:id="@+id/tv_fly_height_limit" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_alt_title" android:layout_weight="1"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray" android:id="@+id/tv_height_warn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_alt_limit"/>
+                    <EditText android:textColor="@color/colorAccent_blue" android:textColorHint="@color/gray" android:gravity="center" android:id="@+id/et_fly_height" android:background="@drawable/newui_stroke_gray_no_radius" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_40" android:text="30" android:maxLines="1" android:inputType="number" android:imeOptions="actionDone" android:layout_marginStart="@dimen/dp_4"/>
+                </LinearLayout>
+                <View android:id="@+id/rtl_height_view" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_rtl_height" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:id="@+id/tv_rtl_height_limit" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/rtl_height_title" android:layout_weight="1"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray" android:id="@+id/tv_rtl_height_warn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtl_alt_limit"/>
+                    <EditText android:textColor="@color/colorAccent_blue" android:textColorHint="@color/gray" android:gravity="center" android:id="@+id/et_rtl_height" android:background="@drawable/newui_stroke_gray_no_radius" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_4" android:text="30" android:maxLines="1" android:inputType="number" android:imeOptions="actionDone"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/gray" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_setting_base"/>
+                <View android:id="@+id/update_rth_view" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/update_rth_ll" android:layout_width="match_parent" android:layout_height="90dp">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/update_rth_title" android:layout_weight="1"/>
+                        <com.xeagle.android.vjoystick.IWidgets.IButton android:textSize="@dimen/sp_12" android:textColor="@color/black" android:gravity="center" android:id="@+id/bt_update_rth" android:background="@drawable/newui_bg_white_btn" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_28" android:text="@string/soft_update_updatebtn"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/setting_text_description" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_rth_description" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/switch_button"/>
+                </LinearLayout>
+                <View android:id="@+id/limit_alt_view" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/limit_alt_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80dp">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:id="@+id/tv_fly_distance_limit" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_radius_title" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/tv_distance_warn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_radius_fence"/>
+                    <EditText android:textColor="@color/colorAccent_blue" android:textColorHint="@color/gray" android:gravity="center" android:id="@+id/et_fly_distance" android:background="@drawable/newui_stroke_gray_no_radius" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_40" android:text="50" android:maxLines="1" android:inputType="number" android:imeOptions="actionDone" android:layout_marginStart="@dimen/dp_4"/>
+                </LinearLayout>
+                <View android:id="@+id/switch_speed_view" android:background="@color/gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/switch_speed_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:id="@+id/tv_gear" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_speed_title" android:layout_weight="1"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_gear" android:background="@drawable/newui_stroke_accent_no_radius" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/setting_btn_text" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_stable_gear" android:background="@drawable/newui_bg_accent" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_28" android:text="@string/c_mode"/>
+                        <View android:id="@+id/gear_line1" android:background="@color/white" android:layout_width="1dp" android:layout_height="match_parent"/>
+                        <TextView android:textSize="@dimen/setting_btn_text" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_general_gear" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_28" android:text="@string/n_mode"/>
+                        <View android:id="@+id/gear_line2" android:background="@color/white" android:layout_width="1dp" android:layout_height="match_parent"/>
+                        <TextView android:textSize="@dimen/setting_btn_text" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_sport_gear" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_28" android:text="@string/s_mode"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@+id/vision_follow_view" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/vision_follow_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_vision_follow" android:layout_weight="1"/>
+                    <com.xeagle.android.newUI.widgets.NiceSwitchButton android:id="@+id/vision_follow_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" app:sb_background="@color/transparency" app:sb_checked="true" app:sb_checked_color="@color/colorAccent_blue"/>
+                </LinearLayout>
+                <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_unbind" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_app_bound" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_bounded"/>
+                    <com.xeagle.android.newUI.widgets.NiceSwitchButton android:id="@+id/bind_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" app:sb_background="@color/transparency" app:sb_checked="true" app:sb_checked_color="@color/colorAccent_blue"/>
+                </LinearLayout>
+                <View android:id="@+id/divide_unbind" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_120">
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_senor_setting"/>
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                        <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_senor_cal" android:layout_weight="1"/>
+                        <com.xeagle.android.vjoystick.IWidgets.IButton android:textSize="@dimen/setting_btn_text" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_level_calibration" android:background="@drawable/newui_bg_white_btn" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_28" android:text="@string/newui_level_cal"/>
+                        <com.xeagle.android.vjoystick.IWidgets.IButton android:textSize="@dimen/setting_btn_text" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_compass_calibration" android:background="@drawable/newui_bg_white_btn" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_28" android:layout_marginLeft="@dimen/dp_10" android:text="@string/newui_compass_cal"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@+id/drone_active_view" android:background="@color/gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_drone_active" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/drone_active_time" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/drone_active_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A"/>
+                </LinearLayout>
+                <View android:id="@+id/drone_sn_view" android:background="@color/gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_drone_sn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/drone_sn_code" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/drone_sn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A"/>
+                </LinearLayout>
+                <View android:background="@color/gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_safe_setting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/tv_safe_setting" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;"/>
+                </LinearLayout>
+                <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginBottom="@dimen/dp_30"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

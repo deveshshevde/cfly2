@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/frame_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/match_code_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="遥控器对频" style="@style/RemoteSettingText"/>
+        <ImageButton android:background="@drawable/set_remote_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/greyblue" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/remote_calibrate_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="遥控器校准" style="@style/RemoteSettingText"/>
+        <ImageButton android:background="@drawable/set_remote_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/greyblue" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/switch_handle_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="遥控器左右手切换" style="@style/RemoteSettingText"/>
+        <ImageButton android:background="@drawable/set_remote_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/greyblue" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/sub_remote_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/sub_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="子母控" style="@style/RemoteSettingText"/>
+        <TextView android:id="@+id/sub_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100dp" android:text="info" android:layout_toRightOf="@+id/sub_txt" style="@style/RemoteSettingText"/>
+        <ImageButton android:background="@drawable/set_remote_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/greyblue" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/gimbal_update_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="云台升级" style="@style/RemoteSettingText"/>
+        <ImageButton android:background="@drawable/set_remote_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/greyblue" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

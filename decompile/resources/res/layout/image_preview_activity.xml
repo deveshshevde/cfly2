@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_bar" layout="@layout/include_top_bar_select"/>
+    <com.xeagle.android.login.common.ViewPagerFixed android:id="@+id/viewpager" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_bar"/>
+    <RelativeLayout android:id="@+id/bottom_bar" android:background="#cc000000" android:layout_width="match_parent" android:layout_height="125dp" android:layout_alignParentBottom="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/choose_list" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="77dp"/>
+        <com.xeagle.android.login.common.SuperCheckBox android:textColor="#fff" android:id="@+id/cb_origin" android:paddingLeft="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:button="@drawable/image_original_selector" android:text="原图" android:layout_below="@+id/choose_list" style="@style/SuperCheckboxTheme"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_ok" android:background="@drawable/blue_round_box" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginLeft="8dp" android:layout_marginRight="14dp" android:text="@string/complete" android:layout_below="@+id/choose_list" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

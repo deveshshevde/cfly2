@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="cfly2" />
+    <version value="10" />
+
+    <list>
+        <mapping class="com.flypro.core.database.PdfData" />
+
+        <mapping class="com.flypro.core.database.UserData"/>
+
+        <mapping class="com.flypro.core.database.UploadData"/>
+
+        <mapping class="com.flypro.core.database.ListenerListData" />
+
+        <mapping class="com.flypro.core.database.ListenerTotalData" />
+
+        <mapping class="com.xeagle.android.editor.database.EditorData"/>
+
+        <mapping class="com.flypro.core.database.FirmwareInfoData"/>
+
+        <mapping class="com.flypro.core.database.DroneInfoData"/>
+
+        <mapping class="com.flypro.core.database.BatteryInfoData"/>
+
+    </list>
+
+    <storage value="external" />
+</litepal>

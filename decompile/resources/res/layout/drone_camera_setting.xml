@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:id="@+id/camera_quality_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图传质量" style="@style/SystemSettingText"/>
+            <SeekBar android:id="@+id/camera_seek" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <TextView android:textColor="@color/white" android:id="@+id/camera_quality_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="6Mbps(1km)" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:id="@+id/camera_selfie_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selfie_mode" style="@style/SystemSettingText"/>
+            <com.xeagle.android.widgets.button.SwitchButton android:id="@+id/camera_selfie_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:kswAnimationDuration="300" app:kswBackDrawable="@drawable/ios_back_drawable" app:kswBackMeasureRatio="2" app:kswThumbDrawable="@drawable/miui_thumb_drawable" app:kswThumbMarginBottom="-2dp" app:kswThumbMarginLeft="-3dp" app:kswThumbMarginRight="-2dp" app:kswThumbMarginTop="0dp" style="@style/SwitchButtonStyle"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:id="@+id/camera_continuous_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selfie_mode" style="@style/SystemSettingText"/>
+            <com.xeagle.android.widgets.button.SwitchButton android:id="@+id/camera_continuous_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:kswAnimationDuration="300" app:kswBackDrawable="@drawable/ios_back_drawable" app:kswBackMeasureRatio="2" app:kswThumbDrawable="@drawable/miui_thumb_drawable" app:kswThumbMarginBottom="-2dp" app:kswThumbMarginLeft="-3dp" app:kswThumbMarginRight="-2dp" app:kswThumbMarginTop="0dp" style="@style/SwitchButtonStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

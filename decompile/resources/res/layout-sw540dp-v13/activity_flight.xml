@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:id="@+id/slidingPanelContainer" android:layout_width="match_parent" android:layout_height="match_parent" app:dragView="@+id/flightActionsFragment" app:fadeColor="@android:color/transparent" app:overlay="true" app:paralaxOffset="0dp" app:shadowHeight="0dp">
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/common_flight_layout"/>
+        <com.xeagle.android.widgets.FitsSystemWindowsFrameLayout android:id="@+id/telemetryFragment" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.xeagle.android.widgets.FitsSystemWindowsFrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_failsfae" android:background="#d8ee2d3e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64dp">
+                <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/failsafeImageView" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/armr" android:layout_weight="1"/>
+                <TextView android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/failsafeTextView" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="4" style="@style/editorMissionOverviewText"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/menu_button"/>
+            </LinearLayout>
+            <include android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="70dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" layout="@layout/cardview_flight"/>
+        </com.xeagle.android.widgets.FitsSystemWindowsFrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.xeagle.android.widgets.FitsSystemWindowsFrameLayout android:id="@+id/flightActionsFragment" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ScrollView android:background="@drawable/flight_mode_panel_container_bg" android:padding="3dp" android:clickable="true" android:layout_width="@dimen/flight_actions_container_width" android:layout_height="wrap_content" android:minHeight="@dimen/flight_actions_container_height">
+            <FrameLayout android:id="@+id/sliding_drawer_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

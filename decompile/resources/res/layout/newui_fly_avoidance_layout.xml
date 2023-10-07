@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_avoidance_setting" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_avoidance_close" android:background="@color/transparency" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/newui_fly_close" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avoidance_setting" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="120dp">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/flight_avoidance_function" android:layout_weight="1"/>
+                    <com.xeagle.android.newUI.widgets.NiceSwitchButton android:id="@+id/avoidance_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sb_background="@color/transparency" app:sb_checked="true" app:sb_checked_color="@color/colorAccent_blue"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/setting_text_description" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/flight_avoidance_function_description"/>
+            </LinearLayout>
+            <View android:id="@+id/limit_alt_view" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="120dp">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/radar_chart" android:layout_weight="1"/>
+                    <com.xeagle.android.newUI.widgets.NiceSwitchButton android:id="@+id/radar_chart_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sb_background="@color/transparency" app:sb_checked="true" app:sb_checked_color="@color/colorAccent_blue"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/setting_text_description" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/radar_chart_description"/>
+            </LinearLayout>
+            <View android:id="@+id/divide_unbind" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="120dp">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/return_avoidance_function" android:layout_weight="1"/>
+                    <com.xeagle.android.newUI.widgets.NiceSwitchButton android:id="@+id/return_avoidance_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sb_background="@color/transparency" app:sb_checked="true" app:sb_checked_color="@color/colorAccent_blue"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/setting_text_description" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/return_avoidance_function_description"/>
+            </LinearLayout>
+            <View android:id="@+id/divide_unbind" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

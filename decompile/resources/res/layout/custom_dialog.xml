@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="280dp">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_title_custom_dialog" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="10dp" android:src="@drawable/logo_72"/>
+        <TextView android:textSize="16sp" android:textColor="#ff223e50" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="test"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/content" android:background="@drawable/bg_middle_custom_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp">
+        <TextView android:textSize="14sp" android:textColor="#ff000000" android:id="@+id/message" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <CheckBox android:id="@+id/cb" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photo_remind"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_bottom_custom_dialog" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="24sp" android:textColor="#ffffff" android:id="@+id/switchButton" android:background="@drawable/button_danger_rounded" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/dialog_switch" android:singleLine="true" android:layout_weight="1"/>
+        <Button android:textSize="24sp" android:textColor="#ffffff" android:id="@+id/share" android:background="@drawable/button_info_rounded" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/dialog_share" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CH6_Options">
+        <item>0;None</item>
+        <item>1;Stab Roll/Pitch kP</item>
+        <item>4;Rate Roll/Pitch kP</item>
+        <item>5;Rate Roll/Pitch kI</item>
+        <item>21;Rate Roll/Pitch kD</item>
+        <item>3;Stab Yaw kP</item>
+        <item>6;Rate Yaw kP</item>
+        <item>26;Rate Yaw kD</item>
+        <item>14;Altitude Hold kP</item>
+        <item>7;Throttle Rate kP</item>
+        <item>37;Throttle Rate kD</item>
+        <item>34;Throttle Accel kP</item>
+        <item>35;Throttle Accel kI</item>
+        <item>36;Throttle Accel kD</item>
+        <item>42;Loiter Speed</item>
+        <item>12;Loiter Pos kP</item>
+        <item>22;Loiter Rate kP</item>
+        <item>28;Loiter Rate kI</item>
+        <item>23;Loiter Rate kD</item>
+        <item>10;WP Speed</item>
+        <item>25;Acro RollPitch kP</item>
+        <item>40;Acro Yaw kP</item>
+        <item>9;Relay On/Off</item>
+        <item>13;Heli Ext Gyro</item>
+        <item>17;OF Loiter kP</item>
+        <item>18;OF Loiter kI</item>
+        <item>19;OF Loiter kD</item>
+        <item>30;AHRS Yaw kP</item>
+        <item>31;AHRS kP</item>
+        <item>32;INAV_TC</item>
+        <item>38;Declination</item>
+        <item>39;Circle Rate</item>
+        <item>41;Sonar Gain</item>
+    </array>
+    <array name="CH_Options">
+        <item>0;Do Nothing</item>
+        <item>2;Flip</item>
+        <item>3;Simple Mode</item>
+        <item>4;RTL</item>
+        <item>5;Save Trim</item>
+        <item>7;Save WP</item>
+        <item>8;Multi Mode</item>
+        <item>9;Camera Trigger</item>
+        <item>10;Sonar</item>
+        <item>11;Fence</item>
+        <item>12;ResetToArmedYaw</item>
+        <item>13;Super Simple Mode</item>
+        <item>14;Acro Trainer</item>
+        <item>16;Auto</item>
+        <item>17;AutoTune</item>
+        <item>18;Land</item>
+        <item>19;EPM</item>
+    </array>
+    <array name="CoordSource">
+        <item>Waypoint</item>
+        <item>Ground station</item>
+        <item>Manual entry</item>
+    </array>
+    <array name="ExampleCameraArray">
+        <item>No cameras Available</item>
+    </array>
+    <array name="ExampleWaypointType">
+        <item>Waypoint Type</item>
+    </array>
+    <array name="FligthMode_CopterV3_1">
+        <item>0;Stabilize</item>
+        <item>1;Acro</item>
+        <item>2;AltHold</item>
+        <item>3;Auto</item>
+        <item>4;Guided</item>
+        <item>5;Loiter</item>
+        <item>6;RTL</item>
+        <item>7;Circle</item>
+        <item>8;Position</item>
+        <item>9;Land</item>
+        <item>10;OF_Loiter</item>
+        <item>11;Drift</item>
+        <item>13;Sport</item>
+    </array>
+    <array name="FligthMode_PWM_Range">
+        <item>&lt; 1230</item>
+        <item>1230 – 1360</item>
+        <item>1360 – 1490</item>
+        <item>1490 – 1620</item>
+        <item>1620 – 1749</item>
+        <item>&gt; 1750</item>
+    </array>
+    <array name="MapTypes">
+        <item>@string/menu_map_type_satellite</item>
+        <item>@string/menu_map_type_hybrid</item>
+        <item>@string/menu_map_type_normal</item>
+        <item>@string/menu_map_type_terrain</item>
+    </array>
+    <array name="RCModeValues">
+        <item>MODE1</item>
+        <item>MODE2</item>
+    </array>
+    <array name="RCModes">
+        <item>(Mode1) Throttle Right</item>
+        <item>(Mode2) Throttle Left</item>
+    </array>
+    <array name="RCQuickModes">
+        <item>Stabilize</item>
+        <item>Acro</item>
+        <item>Alt_Hold</item>
+        <item>Auto</item>
+        <item>Guided</item>
+        <item>Loiter</item>
+        <item>RTL</item>
+        <item>Circle</item>
+        <item>Position</item>
+        <item>Land</item>
+        <item>Of_Loiter</item>
+        <item>Drift</item>
+        <item>Sport</item>
+    </array>
+    <array name="RC_Features">
+        <item>Do Nothing</item>
+        <item>Flip</item>
+        <item>Simple Mode</item>
+        <item>RTL</item>
+        <item>Save Trim</item>
+        <item>Save WP</item>
+        <item>Multi Mode</item>
+        <item>Camera Trigger</item>
+        <item>Sonar</item>
+        <item>Fence</item>
+        <item>ResetToArmedYaw</item>
+        <item>Super Simple Mode</item>
+        <item>Acro Trainer</item>
+        <item>Auto</item>
+        <item>AutoTune</item>
+        <item>Land</item>
+        <item>EPM</item>
+    </array>
+    <array name="RC_Tuning">
+        <item>Auto-tune</item>
+        <item>Roll / Pitch</item>
+        <item>Altitude Hold</item>
+        <item>Loiter</item>
+        <item>Navigation</item>
+    </array>
+    <array name="Servo_Functions">
+        <item>0;Disabled</item>
+        <item>1;RCPassThru</item>
+        <item>2;Flap</item>
+        <item>3;Flap_auto</item>
+        <item>4;Aileron</item>
+        <item>5;flaperon</item>
+        <item>6;mount_pan</item>
+        <item>7;mount_tilt</item>
+        <item>8;mount_roll</item>
+        <item>9;mount_open</item>
+        <item>10;camera_trigger</item>
+        <item>11;release</item>
+        <item>12;mount2_pan</item>
+        <item>13;mount2_tilt</item>
+        <item>14;mount2_roll</item>
+        <item>15;mount2_open</item>
+        <item>16;DifferentialSpoiler1</item>
+        <item>17;DifferentialSpoiler2</item>
+        <item>18;AileronWithInput</item>
+        <item>19;Elevator</item>
+        <item>20;ElevatorWithInput</item>
+        <item>21;Rudder</item>
+    </array>
+    <array name="Setup_Radio_Menu">
+        <item>@string/setup_radio_title</item>
+        <item>@string/setup_fm_title</item>
+        <item>@string/setup_ch_title</item>
+        <item>@string/setup_sf_title</item>
+    </array>
+    <array name="Setup_Sensor_Menu">
+        <item>@string/setup_imu_title</item>
+        <item>@string/setup_mag_title</item>
+    </array>
+    <array name="TelemetryBaudTypes">
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+    </array>
+    <array name="TelemetryConnectionTypes">
+        <item>BLUETOOTH</item>
+        <item>USB</item>
+        <item>TCP</item>
+        <item>UDP</item>
+        <item>LWWIFI</item>
+    </array>
+    <array name="VehicleType">
+        <item>ArduCopter</item>
+    </array>
+    <array name="WPData">
+        <item>#</item>
+        <item>Altitude</item>
+        <item>Latitude</item>
+        <item>Longitude</item>
+        <item>P1</item>
+        <item>P2</item>
+        <item>P3</item>
+        <item>P4</item>
+    </array>
+    <array name="action_low_battery">
+        <item>RTH</item>
+        <item>Land</item>
+    </array>
+    <array name="action_metering">
+        <item>Center</item>
+        <item>Multi</item>
+        <item>Spot</item>
+        <item>Fly</item>
+    </array>
+    <array name="action_metering_value">
+        <item>center</item>
+        <item>multi</item>
+        <item>spot</item>
+        <item>fly</item>
+    </array>
+    <array name="auto_pan_entry">
+        <item>Disable</item>
+        <item>User</item>
+        <item>Drone</item>
+    </array>
+    <array name="auto_shutdown_entries">
+        <item>Off</item>
+        <item>1min</item>
+        <item>5min</item>
+        <item>10min</item>
+        <item>30min</item>
+        <item>60min</item>
+    </array>
+    <array name="auto_shutdown_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="awb_value">
+        <item>Auto(Default)</item>
+        <item>Incandescent</item>
+        <item>D4000</item>
+        <item>D5000</item>
+        <item>Sunny</item>
+        <item>cloudy</item>
+        <item>D9000</item>
+        <item>D10000</item>
+        <item>Fluorescent</item>
+        <item>Water</item>
+    </array>
+    <array name="awb_value_sochip">
+        <item>Auto(Default)</item>
+        <item>Sunny</item>
+        <item>Cloudy</item>
+        <item>Incandescent</item>
+        <item>Fluorescent</item>
+    </array>
+    <array name="awb_value_sochip_no">
+        <item>Auto</item>
+        <item>Sunny</item>
+        <item>Cloudy</item>
+        <item>Incandescent</item>
+        <item>Fluorescent</item>
+    </array>
+    <array name="battery_warn">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+    </array>
+    <array name="boot_action_entries">
+        <item>Idle</item>
+        <item>Record</item>
+        <item>Timelapse</item>
+    </array>
+    <array name="boot_action_values">
+        <item>idle</item>
+        <item>record</item>
+        <item>timelapse</item>
+    </array>
+    <array name="burst_rate_entries">
+        <item>1s/3P</item>
+        <item>1s/5P</item>
+        <item>1s/6P</item>
+    </array>
+    <array name="burst_rate_values">
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="channel_switch">
+        <item>ChannelA1</item>
+        <item>ChannelA2</item>
+        <item>ChannelA3</item>
+        <item>ChannelA4</item>
+        <item>ChannelB1</item>
+        <item>ChannelB2</item>
+        <item>ChannelB3</item>
+        <item>ChannelB4</item>
+        <item>ChannelC1</item>
+        <item>ChannelC2</item>
+        <item>ChannelC3</item>
+        <item>ChannelC4</item>
+        <item>ChannelD1</item>
+        <item>ChannelD2</item>
+    </array>
+    <array name="contrast_value_sochip">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0(Default)</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="contrast_value_sochip_no">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="download_video_entries">
+        <item>High Definition</item>
+        <item>Low Definition</item>
+    </array>
+    <array name="download_video_values">
+        <item>Big</item>
+        <item>Small</item>
+    </array>
+    <array name="editor_type">
+        <item>ALL</item>
+        <item>Free editor</item>
+        <item>OneKey editor</item>
+    </array>
+    <array name="effect_mode">
+        <item>Normal(Default)</item>
+        <item>Art</item>
+        <item>Sepia</item>
+        <item>Negative</item>
+        <item>BW</item>
+        <item>Vivid</item>
+        <item>70Film</item>
+    </array>
+    <array name="ev_value">
+        <item>-2.0</item>
+        <item>-1.7</item>
+        <item>-1.3</item>
+        <item>-1.0</item>
+        <item>-0.7</item>
+        <item>-0.3</item>
+        <item>0.0(Default)</item>
+        <item>+0.3</item>
+        <item>+0.7</item>
+        <item>+1.0</item>
+        <item>+1.3</item>
+        <item>+1.7</item>
+        <item>+2.0</item>
+    </array>
+    <array name="ev_value_sochip">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0(Default)</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="ev_value_sochip_no">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="field_of_view_entries">
+        <item>150°</item>
+    </array>
+    <array name="field_of_view_values">
+        <item>150</item>
+    </array>
+    <array name="fov_value">
+        <item>Wide(Default)</item>
+        <item>Medium</item>
+        <item>Narrow</item>
+    </array>
+    <array name="frame_rate_ntsc_entries">
+        <item>30fps</item>
+        <item>60fps</item>
+    </array>
+    <array name="frame_rate_ntsc_values">
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="frame_rate_pal_entries">
+        <item>25fps</item>
+        <item>50fps</item>
+    </array>
+    <array name="frame_rate_pal_values">
+        <item>25</item>
+        <item>50</item>
+    </array>
+    <array name="image_resolution_entries">
+        <item>1920*1080P</item>
+        <item>1280*720P</item>
+    </array>
+    <array name="image_resolution_values">
+        <item>1080P</item>
+        <item>720P</item>
+    </array>
+    <array name="iso_value">
+        <item>Auto(Default)</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+        <item>800</item>
+        <item>1600</item>
+    </array>
+    <array name="photo_resolution">
+        <item>5120*3840(Default)</item>
+        <item>4832*2718</item>
+        <item>4192*3104</item>
+        <item>3648*2736</item>
+        <item>3840*2160</item>
+    </array>
+    <array name="photo_resolution_sochip">
+        <item>3840*2160</item>
+        <item>4800*2700(Default)</item>
+        <item>5440*3060</item>
+    </array>
+    <array name="photo_resolution_sochip_no">
+        <item>3840*2160</item>
+        <item>4800*2700</item>
+        <item>5440*3060</item>
+    </array>
+    <array name="photo_watermark">
+        <item>Off(Default)</item>
+        <item>Date</item>
+        <item>Time</item>
+        <item>Date_Time</item>
+    </array>
+    <array name="poweron_ui_mode_entries">
+        <item>Record</item>
+        <item>Snapshot</item>
+        <item>Timelapse</item>
+        <item>Timer</item>
+        <item>Burst</item>
+    </array>
+    <array name="poweron_ui_mode_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="pref_entries_pixel_format">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888</item>
+        <item>RGBX 8888</item>
+        <item>YV12</item>
+        <item>OpenGL ES2</item>
+    </array>
+    <array name="pref_entries_player">
+        <item>Auto Select</item>
+        <item>AndroidMediaPlayer</item>
+        <item>IjkMediaPlayer</item>
+        <item>IjkExoMediaPlayer</item>
+    </array>
+    <array name="pref_entry_summaries_pixel_format">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888</item>
+        <item>RGBX 8888</item>
+        <item>YV12</item>
+        <item>OpenGL ES2</item>
+    </array>
+    <array name="pref_entry_summaries_player">
+        <item>Auto Select</item>
+        <item>AndroidMediaPlayer</item>
+        <item>IjkMediaPlayer</item>
+        <item>IjkExoMediaPlayer</item>
+    </array>
+    <array name="pref_entry_values_pixel_format">
+        <item />
+        <item>fcc-rv16</item>
+        <item>fcc-rv24</item>
+        <item>fcc-rv32</item>
+        <item>fcc-yv12</item>
+        <item>fcc-_es2</item>
+    </array>
+    <array name="pref_entry_values_player">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="preference_dialog_entry">
+        <item>@string/pref_dialog_entry_always</item>
+        <item>@string/pref_dialog_entry_never</item>
+        <item>@string/pref_dialog_entry_ask</item>
+    </array>
+    <array name="preview_video_entries">
+        <item>High Definition</item>
+        <item>Low Definition</item>
+    </array>
+    <array name="preview_video_values">
+        <item>Big</item>
+        <item>Small</item>
+    </array>
+    <array name="remote_stick_mode_entry">
+        <item>Europe</item>
+        <item>China</item>
+        <item>USA</item>
+        <item>Japan</item>
+    </array>
+    <array name="remote_stick_mode_value">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="saturation_value_sochip">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0(Default)</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="saturation_value_sochip_no">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="scene_mode">
+        <item>Normal(Default)</item>
+        <item>Flash</item>
+        <item>Night</item>
+        <item>Sports</item>
+        <item>Landscape</item>
+        <item>Portrait</item>
+        <item>Sunset</item>
+    </array>
+    <array name="screen_auto_sleep_entries">
+        <item>OFF</item>
+        <item>1min</item>
+        <item>3min</item>
+        <item>5min</item>
+    </array>
+    <array name="screen_auto_sleep_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </array>
+    <array name="screen_brightness_entries">
+        <item>100％</item>
+        <item>60％</item>
+        <item>30％</item>
+    </array>
+    <array name="screen_brightness_values">
+        <item>55</item>
+        <item>50</item>
+        <item>45</item>
+    </array>
+    <array name="splash_circle_colors">
+    </array>
+    <array name="timelapse_interval_entries">
+        <item>1s</item>
+        <item>3s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>30s</item>
+        <item>60s</item>
+    </array>
+    <array name="timelapse_interval_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="timer_count_down_entries">
+        <item>1s</item>
+        <item>3s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>30s</item>
+        <item>60s</item>
+    </array>
+    <array name="timer_count_down_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="tts_periodic_period">
+        <item>@string/pref_tts_off</item>
+        <item>15 sec</item>
+        <item>30 sec</item>
+        <item>45 sec</item>
+        <item>60 sec</item>
+    </array>
+    <array name="tts_periodic_period_values">
+        <item>@null</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </array>
+    <array name="usb_wifi_channel">
+        <item>0ff</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </array>
+    <array name="video_fps_value_ntsc_117">
+        <item>30</item>
+        <item>120</item>
+        <item>60</item>
+    </array>
+    <array name="video_fps_value_pal_117">
+        <item>25</item>
+        <item>120</item>
+        <item>50</item>
+    </array>
+    <array name="video_mode_entries">
+        <item>NTSC</item>
+        <item>PAL</item>
+    </array>
+    <array name="video_mode_values">
+        <item>NTSC</item>
+        <item>PAL</item>
+    </array>
+    <array name="video_resolution">
+        <item>4K 30FPS(Default)</item>
+        <item>2.7K 30FPS</item>
+        <item>1080P 60FPS</item>
+        <item>1080P 30FPS</item>
+        <item>720P 60FPS</item>
+    </array>
+    <array name="video_resolution_entries_ntsc_117">
+        <item>4K2K/30fps</item>
+        <item>1080P/120fps</item>
+        <item>1080P/60fps</item>
+    </array>
+    <array name="video_resolution_entries_ntsc_34220">
+        <item>4K2K/30fps</item>
+        <item>1080P/120fps</item>
+        <item>1080P/60fps</item>
+    </array>
+    <array name="video_resolution_entries_pal_117">
+        <item>4K2K/25fps</item>
+        <item>1080P/120fps</item>
+        <item>1080P/50fps</item>
+    </array>
+    <array name="video_resolution_entries_pal_34220">
+        <item>4K2K/25fps</item>
+        <item>1080P/120fps</item>
+        <item>1080P/50fps</item>
+    </array>
+    <array name="video_resolution_sochip">
+        <item>3820*2160(Default)</item>
+        <item>2688*1520</item>
+        <item>1920*1080</item>
+    </array>
+    <array name="video_resolution_sochip_no">
+        <item>4K</item>
+        <item>2.7K</item>
+        <item>1080P</item>
+    </array>
+    <array name="video_resolution_values_ntsc_117">
+        <item>4K2K</item>
+        <item>1080P</item>
+        <item>1080P</item>
+    </array>
+    <array name="video_resolution_values_ntsc_34220">
+        <item>4K2K_30</item>
+        <item>1080P_120</item>
+        <item>1080P_60</item>
+    </array>
+    <array name="video_resolution_values_pal_117">
+        <item>4K2K</item>
+        <item>1080P</item>
+        <item>1080P</item>
+    </array>
+    <array name="video_resolution_values_pal_34220">
+        <item>4K2K_25</item>
+        <item>1080P_120</item>
+        <item>1080P_50</item>
+    </array>
+    <array name="video_timelapse">
+        <item>Off(Default)</item>
+        <item>On</item>
+    </array>
+    <array name="video_timelapse_interval_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="video_watermark">
+        <item>Off(Default)</item>
+        <item>Date</item>
+        <item>Time</item>
+        <item>Date_Time</item>
+    </array>
+    <array name="water_value_sochip">
+        <item>On(Default)</item>
+        <item>Off</item>
+    </array>
+    <array name="water_value_sochip_no">
+        <item>On</item>
+        <item>Off</item>
+    </array>
+    <array name="wifi_channel">
+        <item>Off</item>
+        <item>149</item>
+        <item>153</item>
+        <item>157</item>
+        <item>161</item>
+        <item>165</item>
+        <item>36</item>
+    </array>
+</resources>

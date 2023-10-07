@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="#2b2937" app:cardElevation="8dp">
+    <RelativeLayout android:background="@drawable/player_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/player_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/notify_title" android:layout_width="wrap_content" android:layout_height="38dp" android:text="@string/warning" android:drawableLeft="@android:drawable/stat_sys_warning" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textColor="@color/white" android:id="@+id/notify_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="滑动后飞行器即将起飞，请注意保持安全距离!" android:singleLine="false"/>
+            <CheckBox android:id="@+id/never_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/notify_content"/>
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photo_remind" android:layout_toRightOf="@+id/never_check" android:layout_alignBaseline="@+id/never_check" android:layout_alignBottom="@+id/never_check" android:layout_toEndOf="@+id/never_check"/>
+        </RelativeLayout>
+        <com.xeagle.android.vjoystick.shimmerFrameLayout.ShimmerFrameLayout android:layout_gravity="center" android:id="@+id/shimmer_view_container" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="280dp" android:layout_height="wrap_content" android:minHeight="58dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:base_alpha="0.25" app:intensity="0.25">
+            <com.cfly.customeui.widget.SlideButton android:layout_gravity="center" android:id="@+id/unlock_slider" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:indeterminate="false" android:progressDrawable="@android:color/transparent" android:minHeight="58dp" android:thumb="@drawable/drone_thumb" android:thumbOffset="-1dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/slider_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true"/>
+        </com.xeagle.android.vjoystick.shimmerFrameLayout.ShimmerFrameLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

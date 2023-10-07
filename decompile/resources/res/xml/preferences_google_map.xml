@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:layout="@layout/prefreence_category" android:title="@string/pref_title_google_map"/>
+    <ListPreference android:entries="@array/MapTypes" android:layout="@layout/preference" android:title="@string/pref_map_type" android:key="@string/pref_map_type_key" android:summary="@string/pref_map_type_summary" android:defaultValue="@string/pref_map_type_default" android:entryValues="@array/MapTypes"/>
+    <CheckBoxPreference android:layout="@layout/static_bg" android:title="@string/pref_advanced_use_offline_maps" android:key="@string/pref_advanced_use_offline_maps_key" android:summary="@string/pref_advanced_use_offline_maps_summary" android:widgetLayout="@layout/accelerometer_checkbox" android:defaultValue="false"/>
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center_vertical" android:id="@+id/setupTitle" android:background="@color/dark_title_bg" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/progress_title_downloading" style="@style/SetupTitle"/>
+    <TextView android:id="@+id/setupDesc" android:background="@drawable/mode_desc_rectangle" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/progress_desc_downloading" style="@style/ModeDetailText"/>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/setupProgressTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Downloading parameters"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@+id/setupProgressBar" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="0.85" style="?android:attr/progressBarStyleHorizontal"/>
+                <TextView android:gravity="center" android:id="@+id/setupProgressRatio" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="10/10" android:layout_weight="0.15"/>
+            </LinearLayout>
+            <Button android:layout_gravity="center" android:id="@+id/buttonCancel" android:background="@drawable/button_blue" android:layout_width="@dimen/setup_action_button_width" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/button_setup_cancel" style="@style/modeControl"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="200dp" android:minHeight="50dp" app:cardBackgroundColor="#f9f5f4" app:cardCornerRadius="4dp" app:cardElevation="5dp" app:cardMaxElevation="4dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/playerContainer" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toTopOf="0">
+            <com.xeagle.android.login.gsy.video.SampleCoverVideo android:id="@+id/videoPlayer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/list_item_btn" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/video_click_play_selector" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/video_download" android:background="@color/transparency" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:src="@drawable/menu_icon_download" android:layout_marginEnd="5dp" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/video_delete" android:background="@color/transparency" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:src="@drawable/photo_delete" android:layout_marginEnd="5dp" app:layout_constraintRight_toLeftOf="@+id/video_download" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

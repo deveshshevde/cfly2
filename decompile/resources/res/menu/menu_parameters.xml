@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_action_reload" android:id="@+id/menu_load_parameters" android:title="@string/refresh" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_action_upload" android:id="@+id/menu_write_parameters" android:title="@string/write" app:showAsAction="ifRoom"/>
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/menu_filter_params" android:title="@string/menu_search_toggle" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_action_folder_open" android:id="@+id/menu_open_parameters" android:title="@string/open" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_save" android:id="@+id/menu_save_parameters" android:title="@string/save" app:showAsAction="never"/>
+</menu>

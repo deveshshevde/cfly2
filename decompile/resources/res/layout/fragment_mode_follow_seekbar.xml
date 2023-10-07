@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/flyoutPanelLayout">
+    <TextView android:id="@+id/ModeDetail" android:background="@drawable/mode_desc_rectangle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mode_guided" style="@style/ModeDetailText"/>
+    <Spinner android:id="@+id/follow_type_spinner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/scrollwheel_bg" android:layout_width="match_parent" android:layout_height="240dp">
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.xeagle.android.widgets.scrollwheel.WheelView android:id="@+id/radius_spinner" android:layout_width="80dp" android:layout_height="120dp"/>
+            <TextView android:textSize="26sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/radius_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Radius" android:layout_below="@+id/radius_spinner"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.xeagle.android.widgets.scrollwheel.WheelView android:layout_gravity="center" android:id="@+id/altitude_spinner" android:layout_width="80dp" android:layout_height="120dp" android:layout_marginLeft="20dp"/>
+            <TextView android:textSize="26sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/altitude_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Altitude" android:layout_below="@+id/altitude_spinner"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

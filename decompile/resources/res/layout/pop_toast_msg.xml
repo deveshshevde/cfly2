@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/toast_corner_black_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_msg" android:padding="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="match_parent" android:text="toast" android:maxEms="12" android:singleLine="false"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

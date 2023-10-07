@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="116dp" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:src="@drawable/menu_triangle_left" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/menu_time_bg_top2" android:scaleType="centerCrop"/>
+        <LinearLayout android:id="@+id/layoutRowBurst_1_3" style="@style/menu_item">
+            <TextView android:text="@string/burst_rate_1_3" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivBurst13Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowBurst_1_5" style="@style/menu_item">
+            <TextView android:text="@string/burst_rate_1_5" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivBurst15Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowBurst_1_6" style="@style/menu_item">
+            <TextView android:text="@string/burst_rate_1_6" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivBurst16Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowBurst_3_9" style="@style/menu_item">
+            <TextView android:text="@string/burst_rate_3_9" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivBurst39Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowBurst_3_18" style="@style/menu_item">
+            <TextView android:text="@string/burst_rate_3_18" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivBurst318Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/menu_time_bg_btm" android:scaleType="centerCrop"/>
+    </LinearLayout>
+</LinearLayout>

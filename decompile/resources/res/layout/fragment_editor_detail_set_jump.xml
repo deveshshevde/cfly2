@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/opaque_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xeagle.android.widgets.spinners.SpinnerSelfSelect android:entries="@array/ExampleWaypointType" android:id="@+id/spinnerWaypointType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <org.droidplanner.android.widgets.SeekBarWithText.SeekBarWithText android:id="@+id/altitudeView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp" app:inc="1" app:max="200" app:min="0" app:title="@string/waypoint_altitude" app:unit="m"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/follow_radius" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/waypoint_jumpto"/>
+                <Spinner android:id="@+id/spinnerJumpTo" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <org.droidplanner.android.widgets.SeekBarWithText.SeekBarWithText android:id="@+id/waypointRepeat" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp" app:inc="1" app:max="50" app:min="0" app:title="@string/waypoint_repeat" app:unit="times"/>
+            <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waypointInfo_SetJump"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

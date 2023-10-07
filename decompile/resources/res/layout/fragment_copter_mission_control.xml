@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:id="@+id/mc_disconnected_buttons" android:background="@drawable/flight_action_buttons_container_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@+id/mc_connectBtn" android:text="@string/menu_connect" android:drawableTop="@drawable/ic_connect" style="@style/flightControlButton.Row"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/mc_disarmed_buttons" android:background="@drawable/flight_action_buttons_container_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@+id/mc_armBtn" android:text="@string/mission_control_arm" android:drawableTop="@drawable/ic_arm" style="@style/flightControlButton.Row"/>
+        <Button android:id="@+id/mc_SelfBtn" android:text="@string/mission_control_Selfie" android:drawableTop="@drawable/ic_selfie" style="@style/flightControlButton.Row"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/mc_armed_buttons" android:background="@drawable/flight_action_buttons_container_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@+id/mc_disarmBtn" android:text="@string/mission_control_disarm" android:drawableTop="@drawable/ic_arm_active" style="@style/flightControlButton.Row"/>
+        <Button android:id="@+id/mc_takeoff" android:text="@string/mission_control_takeoff" android:drawableTop="@drawable/ic_takeoff" style="@style/flightControlButton.Row"/>
+        <Button android:id="@+id/mc_TakeoffInAutoBtn" android:text="@string/mission_control_auto" android:drawableTop="@drawable/ic_auto" style="@style/flightControlButton.Row"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/mc_in_flight_buttons" android:background="@drawable/flight_action_buttons_container_bg" android:visibility="gone" android:layout_width="@dimen/flight_actions_container_width" android:layout_height="wrap_content">
+        <Button android:id="@+id/mc_homeBtn" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/mission_control_home" android:drawableTop="@drawable/ic_home" android:layout_weight="1" style="@style/flightControlButton.Row"/>
+        <Button android:id="@+id/mc_land" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/mission_control_land" android:drawableTop="@drawable/ic_land" android:layout_weight="1" style="@style/flightControlButton.Row"/>
+        <Button android:id="@+id/mc_pause" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/mission_control_pause" android:drawableTop="@drawable/ic_pause" android:layout_weight="1" style="@style/flightControlButton.Row"/>
+        <Button android:id="@+id/mc_autoBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mission_control_auto" android:drawableTop="@drawable/ic_auto" android:layout_weight="1" style="@style/flightControlButton.Row"/>
+        <Button android:id="@+id/mc_follow" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/mission_control_follow" android:drawableTop="@drawable/ic_follow" android:layout_weight="1" style="@style/flightControlButton.Row"/>
+    </LinearLayout>
+</FrameLayout>

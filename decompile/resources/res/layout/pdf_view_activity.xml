@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.barteksc.pdfviewer.PDFView android:id="@+id/pdf_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.xeagle.android.vjoystick.IWidgets.IButton android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_go_back" android:background="@color/transparency" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:text="@string/newui_back" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

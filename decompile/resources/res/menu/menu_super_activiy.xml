@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:enabled="false" android:id="@+id/menu_group_connected" android:visible="false">
+        <item android:id="@+id/menu_info_bar" android:title="@string/menu_info_bar" android:showAsAction="always" android:actionProviderClass="com.xeagle.android.widgets.actionProviders.InfoBarActionProvider"/>
+        <item android:id="@+id/menu_send_mission" android:title="@string/send_mission" android:showAsAction="never"/>
+        <item android:id="@+id/menu_load_mission" android:title="@string/load_mission" android:showAsAction="never"/>
+        <item android:id="@+id/menu_triggerCamera" android:title="Picture" android:showAsAction="never"/>
+        <item android:id="@+id/menu_epm_release" android:title="Release" android:showAsAction="never"/>
+        <item android:id="@+id/menu_epm_grab" android:title="Grab" android:showAsAction="never"/>
+    </group>
+    <item android:id="@+id/menu_connect" android:title="@string/menu_disconnect" android:showAsAction="never"/>
+</menu>

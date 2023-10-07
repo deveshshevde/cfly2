@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="#151515" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.xeagle.android.widgets.scatterplot.ScatterPlot android:id="@+id/scatterPlot1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.xeagle.android.widgets.scatterplot.ScatterPlot android:id="@+id/scatterPlot2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:id="@+id/textViewDesc" android:background="@drawable/mode_desc_rectangle" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/setup_mag_start" style="@style/ModeDetailText"/>
+    <FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.5">
+        <Button android:layout_gravity="center" android:id="@+id/buttonStep" android:background="@drawable/bt_compass_bg" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/button_setup_calibrate" style="@style/modeControl"/>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/in_progress_calibration_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/calibration_progress_bar" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_toLeftOf="@+id/calibration_progress" android:layout_above="@+id/buttonCancel" android:layout_alignParentLeft="true" android:layout_toStartOf="@+id/calibration_progress" android:layout_alignParentStart="true" style="@style/Widget.Holo.ProgressBar.Horizontal"/>
+            <TextView android:gravity="center" android:id="@+id/calibration_progress" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:layout_alignTop="@+id/calibration_progress_bar" android:layout_alignBottom="@+id/calibration_progress_bar" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <Button android:id="@+id/buttonCancel" android:background="@drawable/button_green_drawable" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginBottom="20dp" android:text="@string/button_setup_cancel" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/modeControl"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

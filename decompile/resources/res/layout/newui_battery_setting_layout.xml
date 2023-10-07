@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_battery_setting" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_battery_close" android:background="@color/transparency" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/newui_fly_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_battery_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_battery_setting" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="@dimen/dp_180">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_battery_status" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_60" android:src="@drawable/newui_settings_battery_0"/>
+                    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_battery_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="0%" android:maxLines="1"/>
+                </LinearLayout>
+                <View android:background="@color/gray" android:layout_width="1dp" android:layout_height="match_parent"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bat_voltage_txt"/>
+                    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_battery_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="0.0V" android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginBottom="@dimen/dp_30"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_low_battery" android:maxLines="1"/>
+                <com.warkiz.tickseekbar.TickSeekBar android:id="@+id/tickseekbar_electric" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1" app:tsb_max="80" app:tsb_show_tick_texts="0" app:tsb_thumb_color="@color/newui_red" app:tsb_thumb_size="@dimen/dp_20" app:tsb_tick_texts_color="@color/white" app:tsb_tick_texts_size="@dimen/sp_12" app:tsb_track_progress_color="@color/newui_red" app:tsb_track_progress_size="@dimen/dp_4"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_electric" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="0%" android:maxLines="1"/>
+            </LinearLayout>
+            <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dp_20"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_bat_active" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bat_active_time" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/bat_active_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A"/>
+            </LinearLayout>
+            <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_bat_sn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bat_sn_code" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/bat_sn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A"/>
+            </LinearLayout>
+            <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_bat_type" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bat_type_tv" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/bat_type_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A"/>
+            </LinearLayout>
+            <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_bat_version" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bat_version_tv" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/bat_version_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

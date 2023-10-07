@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutInfoBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="24dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:src="@drawable/flypro" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ivWifiSignal" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="6dp" android:src="@drawable/level_wifi" android:scaleType="fitCenter" android:layout_toLeftOf="@+id/ivBatteryCapacity"/>
+            <ImageView android:id="@+id/ivBatteryCapacity" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp" android:layout_marginTop="6dp" android:layout_marginRight="16dp" android:scaleType="fitCenter" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <TextView android:id="@+id/tvResolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/main_info_text"/>
+            <TextView android:id="@+id/tvStorge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sd" android:layout_toLeftOf="@+id/pbStorgeUsageVolume" android:layout_centerVertical="true" style="@style/main_info_text"/>
+            <ProgressBar android:id="@+id/pbStorgeUsageVolume" android:layout_width="80dp" android:layout_height="10dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/layer_sd_usage" android:layout_toLeftOf="@+id/tvStorageAvailable" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView android:textSize="14sp" android:id="@+id/tvStorageAvailable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="2.5G/8.0G" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/main_info_text"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/layoutSettingBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layoutInfoBar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/layoutSetCapture" android:background="@drawable/btn_action_bg" android:clickable="false" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/ivCaptureType" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="8dp" android:layout_marginRight="4dp" android:src="@drawable/level_mode" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/tvCaptureInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1s5P" android:layout_toRightOf="@+id/ivCaptureType" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:src="@drawable/btn_action_dropmenu_arrow" android:scaleType="fitCenter" android:layout_toRightOf="@+id/tvCaptureInfo" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/ivSettings" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:src="@drawable/selector_button_setting" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layoutRecordTimeBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_alignTop="@+id/layoutSettingBar" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/ivLoopRecording" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="5dp" android:src="@drawable/icon_loopvideo" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ivRecordSign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/video_icon" android:scaleType="fitCenter" android:layout_toRightOf="@+id/ivLoopRecording" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/tvRecordTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:layout_toRightOf="@+id/ivRecordSign" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layoutCommandBar" android:layout_width="match_parent" android:layout_height="80dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/ivBrowseFile" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="50dp" android:src="@drawable/selector_button_files" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/layoutSetMode" android:background="@drawable/btn_action_bg" android:layout_width="96dp" android:layout_height="48dp" android:layout_marginRight="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/ivModeMenu" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="12dp" android:src="@drawable/level_mode" android:scaleType="fitCenter" android:layout_toLeftOf="@+id/spaceCenter" android:layout_centerVertical="true"/>
+            <Space android:id="@+id/spaceCenter" android:layout_width="4dp" android:layout_height="4dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@drawable/btn_action_dropmenu_arrow" android:scaleType="fitCenter" android:layout_toRightOf="@+id/spaceCenter" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivCommand" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginBottom="8dp" android:src="@drawable/btn_shooting" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/viewCoverOnPowerOff" android:background="#ee000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/ivPower" android:visibility="invisible" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="8dp" android:layout_marginRight="64dp" android:layout_marginBottom="8dp" android:src="@drawable/selector_power" android:layout_alignTop="@+id/layoutSettingBar" android:layout_alignRight="@+id/layoutSettingBar"/>
+</RelativeLayout>

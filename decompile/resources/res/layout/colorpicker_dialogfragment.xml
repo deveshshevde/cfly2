@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xeagle.android.camera.widgets.ColorPicker android:id="@+id/colorPiker" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/colorPiker">
+        <Button android:textSize="22sp" android:textColor="#2d7662" android:id="@+id/setCancel" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/setting_color_cancel" android:layout_below="@+id/colorPiker"/>
+        <Button android:textSize="22sp" android:textColor="#2d7662" android:id="@+id/setColor" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="@string/setting_color_set"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cl_drone_safe_setting" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_title" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" app:layout_constraintTop_toTopOf="0">
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_safe_close" android:background="@color/transparency" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/newui_fly_close" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_safe_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_safe_setting" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_40" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_safe_setting_content" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rtl_safe_setting_ll" android:paddingTop="@dimen/dp_30" android:paddingBottom="@dimen/dp_30" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+                <TextView android:textSize="@dimen/setting_text_title" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/low_battery_action" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/colorPrimary_blue" android:gravity="center" android:id="@+id/tv_safe_setting" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_45" android:text="@string/action_rtl" android:drawablePadding="3dp" android:drawableEnd="@drawable/editor_down_indicator" android:layout_marginEnd="@dimen/dp_10"/>
+            </LinearLayout>
+            <View android:id="@+id/divide_rtl" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

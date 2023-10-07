@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#202c36" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#202c36" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_alignParentTop="true">
+        <TextView android:textSize="24sp" android:textColor="#0000" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@+id/title_bar_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recycle_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <Button android:textColor="@color/white" android:id="@+id/go_back" android:background="@drawable/button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:text="@string/go_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="21dp" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="6"/>
+    <TextView android:textColor="#ffffff" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/advice_mail" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    <TextView android:autoLink="email" android:layout_gravity="center_horizontal" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="marketing@iflypro.com"/>
+</LinearLayout>

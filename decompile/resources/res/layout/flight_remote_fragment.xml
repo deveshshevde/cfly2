@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/match_code_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请求对码"/>
+        <TextView android:textSize="16sp" android:textColor="#388e3c" android:id="@+id/match_code_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="请求回应"/>
+        <Button android:id="@+id/stick_request_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请求当前摇杆模式"/>
+        <TextView android:textSize="16sp" android:textColor="#388e3c" android:id="@+id/stick_request_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="请求回应"/>
+        <Button android:id="@+id/stick_set_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置摇杆模式"/>
+        <TextView android:textSize="16sp" android:textColor="#388e3c" android:id="@+id/stick_set_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="请求回应"/>
+        <Button android:id="@+id/start_calibrate_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始校准"/>
+        <TextView android:textSize="16sp" android:textColor="#388e3c" android:id="@+id/start_calibrate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="请求回应"/>
+    </LinearLayout>
+</ScrollView>

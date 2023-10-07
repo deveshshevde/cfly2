@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/view_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_centerVertical="true">
+        <TextView android:textSize="8sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/record_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="2016.10.12" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="5dp" android:layout_alignParentStart="true"/>
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:gravity="center_vertical" android:id="@+id/record_item_btn" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/record_list_indicator" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@drawable/record_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/view_rl"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="116dp" android:layout_height="wrap_content">
+    <ImageView android:background="@drawable/menu_more_bg_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitEnd"/>
+    <LinearLayout android:id="@+id/ibdelete" style="@style/menu_item">
+        <ImageView android:src="@drawable/menu_icon_trash" style="@style/menu_item_icon"/>
+        <TextView android:text="@string/action_delete" style="@style/menu_item_text"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ibshare" style="@style/menu_item">
+        <ImageView android:src="@drawable/menu_icon_share" style="@style/menu_item_icon"/>
+        <TextView android:text="@string/action_share" style="@style/menu_item_text"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ibdownload" style="@style/menu_item">
+        <ImageView android:src="@drawable/menu_icon_download" style="@style/menu_item_icon"/>
+        <TextView android:text="@string/action_download" style="@style/menu_item_text"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ibfileInfo" style="@style/menu_item">
+        <ImageView android:src="@drawable/menu_icon_detail" style="@style/menu_item_icon"/>
+        <TextView android:text="@string/action_fileInfo" style="@style/menu_item_text"/>
+    </LinearLayout>
+    <ImageView android:background="@drawable/menu_time_bg_btm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart"/>
+</LinearLayout>

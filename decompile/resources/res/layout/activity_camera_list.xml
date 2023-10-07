@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/layout_list_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="38dp">
+        <ImageView android:id="@+id/iv_list_top_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/go_back_map" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/dialog_title" android:id="@+id/tv_list_top_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/mMediaList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_list_top"/>
+</RelativeLayout>

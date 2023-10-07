@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_bar" android:visibility="gone" layout="@layout/include_top_bar_select"/>
+    <com.xeagle.android.login.common.ViewPagerFixed android:id="@+id/viewpager" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_bar"/>
+    <ImageView android:id="@+id/retake" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="60dp" android:layout_marginBottom="60dp" android:src="@drawable/capture_preview_back" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/btn_ok" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="60dp" android:layout_marginBottom="60dp" android:src="@drawable/capture_preview_finish" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

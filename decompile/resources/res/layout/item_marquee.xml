@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xeagle.android.widgets.marquee.MarqueeScrollerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="14sp" android:textStyle="normal" android:textColor="@color/color_primary_green" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/breaking_news_title" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true"/>

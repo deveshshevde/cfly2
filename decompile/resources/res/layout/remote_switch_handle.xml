@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/frame_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xeagle.android.widgets.spinners.SpinnerSelfSelect android:id="@+id/remote_spinner" android:background="@drawable/remote_spinner_select" android:paddingLeft="5dp" android:layout_width="120dp" android:layout_height="40dp" android:layout_margin="20dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/remote_spinner">
+        <ImageView android:id="@+id/remote_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:src="@drawable/remote_china_left"/>
+        <ImageView android:id="@+id/remote_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/remote_china_right"/>
+    </LinearLayout>
+</RelativeLayout>

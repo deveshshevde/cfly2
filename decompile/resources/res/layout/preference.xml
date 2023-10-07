@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/roundcorner" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:layout_marginBottom="6dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ffd700" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="marquee" android:id="@android:id/summary" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_90">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@+id/tv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_back" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_24"/>
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:text="@string/newui_person_info" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp_30"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/newui_stroke_gray" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_80" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rl_avatar" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_head" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_alignParentStart="true"/>
+            <com.xeagle.android.login.common.CircleImageView android:id="@+id/ci_avatar" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:src="@drawable/newui_default_avatar" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_25" android:layout_alignParentEnd="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:src="@drawable/newui_gray_right" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_4" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:id="@+id/rl_name" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_user_name" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="admin" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_25" android:layout_alignParentEnd="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:src="@drawable/newui_gray_right" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_4" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <com.xeagle.android.vjoystick.IWidgets.IButton android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/ib_save" android:background="@drawable/bt_save_press" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_20" android:text="@string/newui_save"/>
+    <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@+id/update_pb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

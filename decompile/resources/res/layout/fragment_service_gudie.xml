@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_60" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                <ImageView android:id="@+id/iv_guide_assure" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:src="@drawable/guide_assure"/>
+                <TextView android:textSize="@dimen/sp_20" android:textStyle="bold" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_assure_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_assure_1" android:layout_alignTop="@+id/iv_guide_assure" android:layout_marginStart="@dimen/dp_20" android:layout_toEndOf="@+id/iv_guide_assure"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@+id/tv_assure_1" android:layout_alignStart="@+id/tv_assure_1">
+                    <ImageView android:id="@+id/iv_guide_1" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/select_disactive"/>
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_assure_2" android:singleLine="false" android:layout_alignTop="@+id/iv_guide_1" android:layout_marginStart="@dimen/dp_8" android:layout_toEndOf="@+id/iv_guide_1"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                <ImageView android:id="@+id/iv_guide_express" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:src="@drawable/guide_express"/>
+                <TextView android:textSize="@dimen/sp_20" android:textStyle="bold" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_express_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_express_1" android:layout_alignTop="@+id/iv_guide_express" android:layout_marginStart="@dimen/dp_20" android:layout_toEndOf="@+id/iv_guide_express"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@+id/tv_express_1" android:layout_alignStart="@+id/tv_express_1">
+                    <ImageView android:id="@+id/iv_guide_2" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/select_disactive"/>
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_express_2" android:singleLine="false" android:layout_alignTop="@+id/iv_guide_2" android:layout_marginStart="@dimen/dp_8" android:layout_toEndOf="@+id/iv_guide_2"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                <ImageView android:id="@+id/iv_guide_maintain" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:src="@drawable/guide_maintainance"/>
+                <TextView android:textSize="@dimen/sp_20" android:textStyle="bold" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_maintain_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_maintain_1" android:layout_alignTop="@+id/iv_guide_maintain" android:layout_marginStart="@dimen/dp_20" android:layout_toEndOf="@+id/iv_guide_maintain"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@+id/tv_maintain_1" android:layout_alignStart="@+id/tv_maintain_1">
+                    <ImageView android:id="@+id/iv_guide_3" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/select_disactive"/>
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_maintain_2" android:singleLine="false" android:layout_alignTop="@+id/iv_guide_3" android:layout_marginStart="@dimen/dp_8" android:layout_toEndOf="@+id/iv_guide_3"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.xeagle.android.vjoystick.IWidgets.IButton android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@+id/bt_return" android:background="@drawable/bt_round_black" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_20" android:text="@string/newui_back" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

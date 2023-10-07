@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center_vertical" android:id="@+id/setupTitle" android:background="@color/dark_title_bg" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/setup_radio_title_complete" style="@style/SetupTitle"/>
+    <TextView android:id="@+id/setupDesc" android:background="@drawable/mode_desc_rectangle" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setup_radio_desc_complete" style="@style/ModeDetailText"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/setupSummary" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RC #\9\9Min \9\9Mid \9\9Max "/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <Button android:id="@+id/buttonCancel" android:background="@drawable/button_blue" android:layout_width="@dimen/setup_action_button_width" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/button_setup_cancel" style="@style/modeControl"/>
+                <Button android:id="@+id/buttonSend" android:background="@drawable/button_green_drawable" android:layout_width="@dimen/setup_action_button_width" android:layout_height="wrap_content" android:text="@string/button_setup_send" style="@style/modeControl"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

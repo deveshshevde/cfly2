@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/menu_action_bg_mid" android:layout_width="match_parent" android:layout_height="50dp">
+    <RelativeLayout android:id="@+id/ibtopTitle" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ibback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="14dp" android:src="@drawable/selector_menu_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/btn_bottom_bg_line" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_toRightOf="@+id/ibback" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/ibtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/file_browser" android:layout_toRightOf="@+id/ibback" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ibPreviewMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/selector_menu_more" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relPushException" android:background="#80232428" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/imgException" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/push_error"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15sp" android:textColor="@android:color/holo_red_light" android:id="@+id/txtPushException" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/push_exception" android:layout_toRightOf="@+id/imgException" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

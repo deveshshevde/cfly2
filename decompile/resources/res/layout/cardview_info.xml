@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#f9f5f4" app:cardCornerRadius="6dp" app:cardElevation="5dp" app:cardMaxElevation="10dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true" app:contentPadding="5dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_shared_icon_link"/>
+            <TextView android:textSize="16sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Website:"/>
+            <TextView android:textSize="16sp" android:textColorLink="#42b3f4" android:autoLink="all" android:linksClickable="true" android:layout_gravity="center" android:id="@+id/website" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="www.flypro.com"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_cart_on"/>
+            <TextView android:textSize="16sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Market:"/>
+            <TextView android:textSize="16sp" android:textColorLink="#42b3f4" android:autoLink="all" android:linksClickable="true" android:layout_gravity="center" android:id="@+id/market" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="marketing@flypro.com"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

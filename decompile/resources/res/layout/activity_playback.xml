@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/surface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:id="@+id/RelativeLayout2" android:background="#90000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/activity_vertical_margin" android:id="@+id/textView_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="00:00" android:layout_alignBaseline="@+id/seekBar_videotime" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <SeekBar android:id="@+id/seekBar_videotime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toLeftOf="@+id/textView_length" android:layout_toRightOf="@+id/textView_time" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="@dimen/activity_vertical_margin" android:id="@+id/textView_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="00:00" android:layout_alignBaseline="@+id/seekBar_videotime" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/RelativeLayout3" android:background="#40000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <Button android:id="@+id/button_play" android:background="@drawable/control_playing" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

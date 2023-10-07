@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/mScrollView" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_mDrawer" android:background="@color/white" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_home" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--" android:drawableLeft="@drawable/ic_status_home" android:drawablePadding="@dimen/info_bar_drawable_padding" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_gps" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--" android:drawableLeft="@drawable/ic_status_gps" android:drawablePadding="@dimen/info_bar_drawable_padding" style="?android:attr/buttonBarButtonStyle"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_gps" android:paddingLeft="80dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_gps_satno" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--"/>
+                <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_gps_hdop_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_battery" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--" android:drawableLeft="@drawable/ic_status_battery" android:drawablePadding="@dimen/info_bar_drawable_padding" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_propeller" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--:--" android:drawableLeft="@drawable/ic_status_flight_time" android:drawablePadding="@dimen/info_bar_drawable_padding" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_signal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--" android:drawableLeft="@drawable/ic_status_rssi" android:drawablePadding="@dimen/info_bar_drawable_padding" style="?android:attr/buttonBarButtonStyle"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_signal" android:paddingLeft="80dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_signal_rssi" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--"/>
+                <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_signal_remrssi" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--"/>
+                <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_signal_noise" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--"/>
+                <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_signal_remnoise" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--"/>
+                <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_signal_fade" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--"/>
+                <TextView android:textSize="@dimen/info_bar_size" android:id="@+id/bar_signal_remfade" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

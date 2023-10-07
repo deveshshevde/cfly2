@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/help_offer" android:id="@+id/menu_help_offer" android:orderInCategory="80" android:title="@string/help_offer" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/enter_cfly" android:id="@+id/menu_enter_cfly" android:visible="false" android:orderInCategory="100" android:title="@string/enter_cfly" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/pair_rc_icon" android:id="@+id/menu_pair_rc" android:visible="false" android:orderInCategory="100" android:title="@string/pair_rc" app:showAsAction="always"/>
+</menu>

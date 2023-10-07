@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1059" android:versionName="V2.4.1" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.cfly.uav_pro" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="31"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+    </queries>
+    <supports-screens android:requiresSmallestWidthDp="320"/>
+    <permission android:name=".permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name=".permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.hardware.usb.host"/>
+    <uses-permission android:name="android.hardware.usb.accessory"/>
+    <uses-feature android:name="android.hardware.screen.portrait"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application android:theme="@style/CustomActionBarTheme" android:label="@string/app_title" android:icon="@drawable/ic_launcher" android:name="com.xeagle.android.XEagleApp" android:windowSoftInputMode="adjustPan" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="false" android:usesCleartextTraffic="true" android:resizeableActivity="true" android:networkSecurityConfig="@xml/network_security_config" android:maxAspectRatio="2.3" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:isSplitRequired="true" android:hasFragileUserData="true" android:requestLegacyExternalStorage="true" android:allowNativeHeapPointerTagging="false" android:preserveLegacyExternalStorage="true">
+        <activity android:name="com.xeagle.android.vjoystick.fragment.http_activity.HttpSdDetailActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.xeagle.android.vjoystick.fragment.http_activity.VideoDetailActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="android.max_aspect" android:value="2.3"/>
+        <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="barcode,face,ocr,ica"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.cfly.uav_pro.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider"/>
+        </provider>
+        <provider android:name="com.xeagle.android.login.pickImage.data.GenericFileProvider" android:exported="false" android:authorities="com.cfly.uav_pro.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider"/>
+        </provider>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBIfq6HCwyRqLh2gFXilwZ2vel4KZkc6TA"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="llMPFcmFvnHSnxlDoAevYhTv1XRdnUGY"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="e24881f25ccd1fe8d30ddc0b124c669e"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="9ce79ebe52a0d5a019c395509f64b024ca696202"/>
+        <activity android:name="com.xeagle.android.activities.MainViewActivity" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.activities.FlightActivity" android:launchMode="singleTask" android:screenOrientation="reverseLandscape"/>
+        <activity android:name="com.xeagle.android.sobot.SobotWebViewActivity" android:launchMode="singleTask" android:screenOrientation="sensorPortrait"/>
+        <activity android:name="com.xeagle.android.login.InputUrlDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:name="com.xeagle.android.vjoystick.activity.ImageViewActivity" android:launchMode="singleTask" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.xeagle.android.vjoystick.activity.DescActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.xeagle.android.editor.activity.EditorSelectorActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.xeagle.android.editor.activity.EditorMultiActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:name="com.xeagle.android.activities.MainTabActivity" android:launchMode="singleTask" android:screenOrientation="reverseLandscape"/>
+        <activity android:name="com.xeagle.android.newUI.activity.TipsImagePreviewActivity" android:launchMode="singleTask" android:screenOrientation="sensorPortrait"/>
+        <activity android:name="com.xeagle.android.vjoystick.gallery.PhotoPreviewActivity" android:launchMode="singleTask" android:screenOrientation="behind"/>
+        <activity android:name="com.xeagle.android.utils.permission.PermissionActivity" android:launchMode="singleTask" android:screenOrientation="fullSensor"/>
+        <activity android:name="com.xeagle.android.vjoystick.SelectActivity" android:exported="false" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.xeagle.android.vjoystick.ListActivity" android:exported="false" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.xeagle.android.camera.widgets.ablum.ExGalleryActivity" android:exported="false" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.xeagle.android.activities.HelpActivity" android:exported="false" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.xeagle.android.vjoystick.ReplayActivity" android:exported="false" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.xeagle.android.vjoystick.RecordViewActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="sensorLandscape"/>
+        <activity android:label="@string/editor" android:name="com.xeagle.android.activities.EditorActivity" android:launchMode="singleTop" android:screenOrientation="reverseLandscape" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:label="@string/editor" android:name="com.xeagle.android.activities.FlightActionActivity" android:launchMode="singleTask" android:screenOrientation="reverseLandscape" android:configChanges="keyboard|orientation|screenSize|layoutDirection" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.DarkActionBar" android:label="@string/menu_drone_setup" android:name="com.xeagle.android.activities.ConfigurationActivity" android:launchMode="singleTop" android:screenOrientation="reverseLandscape" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/settings" android:name="com.xeagle.android.activities.SettingsActivity" android:launchMode="singleTop" android:screenOrientation="reverseLandscape"/>
+        <activity android:theme="@style/preference_set_activity" android:label="@string/activity_title_map_provider_preferences" android:name="com.xeagle.android.activities.helpers.MapPreferencesActivity" android:launchMode="singleTop" android:screenOrientation="reverseLandscape" android:parentActivityName="com.xeagle.android.activities.SettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".android.activities.SettingsActivity"/>
+        </activity>
+        <activity android:label="@string/locator" android:name="com.xeagle.android.activities.LocatorActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.xeagle.android.proxy.updateFirmware.UploadFirmwareActivity" android:screenOrientation="reverseLandscape"/>
+        <receiver android:name="com.xeagle.android.communication.service.NetworkConnectivityReceiver" android:enabled="false" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/title_activity_resource_center" android:name="com.xeagle.android.activities.ResourceCenterNetActivity" android:screenOrientation="reverseLandscape"/>
+        <activity android:name="com.xeagle.android.activities.OpenVideoActivity" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:name="com.xeagle.android.newUI.activity.ExoPlayerActivity" android:launchMode="singleTask" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.xeagle.android.newUI.activity.TipsConnectActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <service android:name="com.xeagle.android.widgets.CarouselView.DownAPKService"/>
+        <service android:name="com.xeagle.android.communication.service.MAVLinkService"/>
+        <service android:name="com.xeagle.android.newUI.cameraManager.CameraClientService"/>
+        <service android:name="com.xeagle.android.communication.service.UpdateSplashService"/>
+        <service android:name="com.xeagle.android.login.listener.UploadListenerService"/>
+        <service android:name="com.xeagle.android.login.common.service.RcUdpReceiver"/>
+        <service android:name="com.xeagle.android.login.common.service.DownloadImageService"/>
+        <service android:name="com.xeagle.android.login.common.service.UdpDataService"/>
+        <service android:name="com.xeagle.android.communication.service.LogcatService"/>
+        <service android:name="com.flypro.core.util.ListenerWriteService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:label="@string/title_activity_youtube" android:name="com.xeagle.android.activities.YoutubeActivity" android:screenOrientation="reverseLandscape" android:hardwareAccelerated="true"/>
+        <activity android:name="com.xeagle.android.activities.CflyNetActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.xeagle.android.vjoystick.activity.PdfListActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.xeagle.android.vjoystick.activity.PdfViewActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/MyDialogStyle" android:name="com.xeagle.android.dialogs.PolicyActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.xeagle.android.login.WelcomeActivity" android:exported="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xeagle.android.newUI.activity.VideoCutActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.PersonInfoActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.MoreActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.vjoystick.gallery.CflyGalleryActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.AccountActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.ContactActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.ChangePwdActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.LoginActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.RegisterActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.xeagle.android.login.ForgetPwActivity" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.xeagle.android.newUI.activity.SelectMapActivity" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.FindByPhoneActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.FindByEmailActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.SplashActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <service android:name="com.xeagle.android.MyService" class="services.MyService"/>
+        <uses-library android:name="com.android.future.usb.accessory"/>
+        <activity android:name="com.xeagle.android.login.HostManagerActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.UserSettingActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.xeagle.android.login.pickImage.TakeIconActivity" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.xeagle.android.newUI.fragment.remindFragment.InsuranceActivity" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ImagePickerTheme.BlackStatusBar" android:name="com.xeagle.android.login.pickImage.ImageCropActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ImagePickerTheme.BlackStatusBar" android:name="com.xeagle.android.login.pickImage.ImageTakeActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.xeagle.android.login.pickImage.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/VideoTheme" android:name="com.xeagle.android.login.pickImage.GLVideoActivity" android:screenOrientation="sensorLandscape" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/VideoTheme" android:name="com.xeagle.android.login.pickImage.GLVideoConfirmActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ImagePickerTheme.BlackStatusBar" android:name="com.xeagle.android.login.pickImage.ImagePreviewRetakeActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ImagePickerTheme.BlackStatusBar" android:name="com.xeagle.android.login.pickImage.ImagePreviewActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/LightBaseTheme" android:name="com.xeagle.android.login.pickImage.ImageGridActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xeagle.android.newUI.activity.FindDroneActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.FlightListenerActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.listener.ListenerMapActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.login.StoreWebviewActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.xeagle.android.login.ChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.activities.RepeaterUpgradeActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.xeagle.android.activities.ParamTestActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/> /&gt; 
+        <activity android:name="com.xeagle.android.newUI.activity.GuideActivity" android:launchMode="singleTask" android:screenOrientation="reverseLandscape" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.DeviceManageActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.GuideSelectActivity" android:launchMode="singleTask" android:screenOrientation="reverseLandscape" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.InsuranceServiceActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.xeagle.android.newUI.activity.AddValueActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.xeagle.android.newUI.activity.InsurancePolicyActivity" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:multiprocess="true" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="com.blankj.utilcode.util.UtilsFileProvider" android:exported="false" android:authorities="com.cfly.uav_pro.utilcode.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.cfly.uav_pro.messenger"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/DetailTheme" android:label="Logcat" android:name="info.hannes.logcat.LogcatActivity"/>
+        <activity android:theme="@style/DetailTheme" android:label="Timber" android:name="info.hannes.logcat.LogfileActivity"/>
+        <activity android:theme="@style/DetailTheme" android:label="All log" android:name="info.hannes.logcat.BothLogActivity"/>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/EasyPhotosTheme" android:name="com.huantansheng.easyphotos.ui.EasyPhotosActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/EasyPhotosFullscreenTheme" android:name="com.huantansheng.easyphotos.ui.PreviewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/EasyPhotosTheme" android:name="com.huantansheng.easyphotos.ui.PuzzleActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/EasyPhotosTheme" android:name="com.huantansheng.easyphotos.ui.PuzzleSelectorActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.cfly.uav_pro.androidx-startup">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.cfly.uav_pro.lifecycle-process"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService" android:process=":filedownloader"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

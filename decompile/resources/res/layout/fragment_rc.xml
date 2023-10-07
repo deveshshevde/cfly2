@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="#ffff0000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@+id/textViewRCThrottle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@+id/textViewRCRudder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1"/>
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@+id/textViewRCElevator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1"/>
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@+id/textViewRCAileron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <org.droidplanner.android.widgets.joystick.JoystickView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/joystickViewL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <org.droidplanner.android.widgets.joystick.JoystickView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/joystickViewR" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

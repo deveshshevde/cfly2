@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/RelativeLayout_alert_flagment" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="30sp" android:textColor="@color/air_speed_label" android:id="@+id/textView_alert_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alert Message" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <Button android:id="@+id/button_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Positive" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    <Button android:id="@+id/button_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Negative" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

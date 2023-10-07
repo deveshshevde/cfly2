@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/flight_card" android:visibility="visible" android:layout_width="240dp" android:layout_height="150dp" android:layout_margin="8dp" app:cardBackgroundColor="#50000000" app:cardCornerRadius="8dp">
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/gps_flight" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GPS"/>
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/altitude_flight" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="flight altitude"/>
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/distance_flight" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:text="DistanceToHome"/>
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/battery_flight" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="110dp" android:text="Battery"/>
+</androidx.cardview.widget.CardView>

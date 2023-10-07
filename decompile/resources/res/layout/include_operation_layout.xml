@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ll_operation_layout" android:background="#efefef" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+    <TextView android:textSize="14sp" android:textColor="@color/greyText" android:gravity="center" android:id="@+id/tv_operation_cancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="120dp" android:text="@string/cancel" android:layout_toLeftOf="@+id/tv_operation_choose_all"/>
+    <TextView android:textSize="14sp" android:textColor="@color/deep_blue" android:gravity="center" android:id="@+id/tv_operation_choose_all" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/choose_all" android:layout_centerInParent="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/greyText" android:gravity="center" android:id="@+id/tv_operation_delete" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="120dp" android:text="@string/delete" android:layout_toRightOf="@+id/tv_operation_choose_all"/>
+</RelativeLayout>

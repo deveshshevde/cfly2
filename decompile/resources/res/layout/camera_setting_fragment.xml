@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/dialog_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/dialog_cancel" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_cancel"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Camera Setting" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/camera_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/menu_camera_name" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+                <TextView android:textColorHint="#ececec" android:id="@+id/camera_name_et" android:background="@drawable/edittext_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/camera_name_btn" android:background="@drawable/camera_bt" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="修改" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/camera_psd_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/menu_camera_password" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+                <TextView android:textColorHint="#ececec" android:id="@+id/camera_psd_et" android:background="@drawable/edittext_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/camera_psd_btn" android:background="@drawable/camera_bt" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="修改" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_photo_resolution" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_photo_resolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_six" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="12M" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:text="10M" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:text="8M" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:text="5M" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3M" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-5dp" android:text="VGA" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_video_resolution" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_record_resolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_four" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="380dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="4KP30" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.5KP60" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1080pP60" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="720pP120" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_cyclic_record" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_record_recycle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_four" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="关" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3min" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5min" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-15dp" android:text="10min" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_tv_format" style="@style/CameraSettingText"/>
+                    <TextView android:textColor="@color/color_primary_red" android:gravity="center_horizontal" android:id="@+id/record_format_support" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-40dp" android:text="Not Support" android:layout_weight="1"/>
+                </LinearLayout>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_tv_format" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_two" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/record_tx_ll" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-60dp" android:text="NTSC" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-80dp" android:text="PAL" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连拍开关" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_switch_capture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_five" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="1" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="5" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拍照格式" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_photo_format" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_three" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-5dp" android:text="JPEG" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45dp" android:text="RAW" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-15dp" android:text="JPEG+RAW" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="缩时录像" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_time_lapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_six" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="关" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="100" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="200" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="500" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="1000" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="2000" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ISO" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_iso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_six" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Auto" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="100" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="200" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="400" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="800" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="1600" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DZoom" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_dzoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_two" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-50dp" android:text="In" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-70dp" android:text="Out" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="白平衡" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_wb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_five" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="380dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="Auto" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="DayLight" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Cloudy" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Tungsten" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10dp" android:text="Fluorescent" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="锐度" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_sharpness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_three" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-15dp" android:text="Sharp" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Normal" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-15dp" android:text="Soft" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="曝光模式" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_expose_metering" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_three" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:text="AIAE" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Center" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10dp" android:text="Spot" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录影色调" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_movie_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_three" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-20dp" android:text="Normal" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mono" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-20dp" android:text="Sepia" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抗闪烁" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_frequency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progressDrawable="@drawable/camera_seek_two" android:minWidth="328dp" android:minHeight="20dp" android:thumb="@drawable/sseek_thumb" android:thumbOffset="-22dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="360dp">
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-65dp" android:text="50Hz" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-80dp" android:text="60Hz" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="曝光值" style="@style/CameraSettingText"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seek_expose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxHeight="4dp" android:max="12" android:progressDrawable="@drawable/seek_bar_bg" android:minWidth="328dp" android:thumb="@drawable/sseek_thumb"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/camera_cache_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/menu_camera_name" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+                <TextView android:textColorHint="#ececec" android:id="@+id/camera_cache_et" android:background="@drawable/edittext_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/camera_cache_btn" android:background="@drawable/camera_bt" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="延时设置" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_record_sound" android:layout_alignParentLeft="true" style="@style/CameraSettingText"/>
+                    <com.xeagle.android.widgets.button.SwitchButton android:id="@+id/camera_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginLeft="5dp" android:layout_alignParentRight="true" app:kswAnimationDuration="300" app:kswBackDrawable="@drawable/ios_back_drawable" app:kswBackMeasureRatio="2" app:kswThumbDrawable="@drawable/miui_thumb_drawable" app:kswThumbMarginBottom="-2dp" app:kswThumbMarginLeft="-3dp" app:kswThumbMarginRight="-1dp" app:kswThumbMarginTop="-2dp" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_auto_record" android:layout_alignParentLeft="true" style="@style/CameraSettingText"/>
+                    <com.xeagle.android.widgets.button.SwitchButton android:id="@+id/camera_auto_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginLeft="5dp" android:layout_alignParentRight="true" app:kswAnimationDuration="300" app:kswBackDrawable="@drawable/ios_back_drawable" app:kswBackMeasureRatio="2" app:kswThumbDrawable="@drawable/miui_thumb_drawable" app:kswThumbMarginBottom="-2dp" app:kswThumbMarginLeft="-3dp" app:kswThumbMarginRight="-1dp" app:kswThumbMarginTop="-2dp" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_show_date" android:layout_alignParentLeft="true" style="@style/CameraSettingText"/>
+                    <com.xeagle.android.widgets.button.SwitchButton android:id="@+id/camera_show_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginLeft="5dp" android:layout_alignParentRight="true" app:kswAnimationDuration="300" app:kswBackDrawable="@drawable/ios_back_drawable" app:kswBackMeasureRatio="2" app:kswThumbDrawable="@drawable/miui_thumb_drawable" app:kswThumbMarginBottom="-2dp" app:kswThumbMarginLeft="-3dp" app:kswThumbMarginRight="-1dp" app:kswThumbMarginTop="-2dp" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_video_quality" android:layout_alignParentLeft="true" style="@style/CameraSettingText"/>
+                    <com.xeagle.android.widgets.button.SwitchButton android:id="@+id/camera_wdr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginLeft="5dp" android:layout_alignParentRight="true" app:kswAnimationDuration="300" app:kswBackDrawable="@drawable/ios_back_drawable" app:kswBackMeasureRatio="2" app:kswThumbDrawable="@drawable/miui_thumb_drawable" app:kswThumbMarginBottom="-2dp" app:kswThumbMarginLeft="-3dp" app:kswThumbMarginRight="-1dp" app:kswThumbMarginTop="-2dp" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_free_space" style="@style/CameraSettingText"/>
+                <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/sd_remain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxx M" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_version" style="@style/CameraSettingText"/>
+                <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/camera_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="camera version" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_format_card" style="@style/CameraSettingText"/>
+                <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/format_sd" android:background="@drawable/camera_bt" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="格式化" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_system_reset" style="@style/CameraSettingText"/>
+                <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/system_default_set" android:background="@drawable/camera_bt" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="确定" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

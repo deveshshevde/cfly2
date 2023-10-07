@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/item_round_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.flypro.photoview_library.PhotoView android:layout_gravity="center" android:id="@+id/iv_review" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="9"/>
+    <View android:id="@+id/divider_view" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.cfly.customeui.widget.IButton android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/ib_ok" android:background="@drawable/bt_round_blue" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_40" android:text="@string/ib_ok" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

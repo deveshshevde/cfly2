@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xeagle.android.widgets.HackyViewPager android:id="@+id/view_pager" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:background="#90181818" android:layout_width="match_parent" android:layout_height="38dp" android:layout_alignParentTop="true">
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_go_back" android:background="@color/transparency" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/go_back_pre" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/photo_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/1" android:layout_toRightOf="@+id/iv_go_back" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/preview_rl" android:background="#90181818" android:layout_width="match_parent" android:layout_height="38dp" android:layout_alignParentBottom="true">
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/photo_info" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photo_info" android:layout_centerInParent="true"/>
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/photo_share" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:src="@drawable/photo_share" android:layout_toRightOf="@+id/photo_info" android:layout_centerVertical="true"/>
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/photo_delete" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:src="@drawable/photo_delete" android:layout_toRightOf="@+id/photo_share" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <com.xeagle.android.firebaseKit.CameraSourcePreview android:id="@+id/firebasePreview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <com.xeagle.android.firebaseKit.GraphicOverlay android:id="@+id/firebaseOverlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.xeagle.android.firebaseKit.CameraSourcePreview>
+    <TextView android:textColor="@color/white" android:id="@+id/result_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test for vision "/>
+</RelativeLayout>

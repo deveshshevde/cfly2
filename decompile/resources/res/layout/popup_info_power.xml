@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="5dp" android:paddingEnd="5dp" style="?android:attr/buttonBarStyle">
+    <TextView android:textSize="@dimen/info_bar_text_size" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/bar_power_current" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" style="?android:attr/buttonBarButtonStyle"/>
+    <TextView android:textSize="@dimen/info_bar_text_size" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/bar_power_mAh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" style="?android:attr/buttonBarButtonStyle"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/textViewDesc" android:background="@drawable/mode_desc_rectangle" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setup_imu_start" android:layout_alignParentTop="true" style="@style/ModeDetailText"/>
+        <Button android:gravity="center" android:id="@+id/buttonStep" android:background="@drawable/button_green_drawable" android:layout_height="wrap_content" android:layout_marginBottom="67dp" android:text="@string/button_setup_calibrate" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/modeControl"/>
+    </RelativeLayout>
+</LinearLayout>

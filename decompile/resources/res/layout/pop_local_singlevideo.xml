@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/pop_rl" android:background="@drawable/pop_dialog_bg" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+    <ImageButton android:id="@+id/pop_local_singleCancel" android:background="@android:color/transparent" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/com_expand" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/divider" android:background="#a39f9f" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/pop_local_singleCancel"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/pop_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider" android:layout_centerInParent="true">
+        <Button android:id="@+id/play_local_singleVideo" android:background="@android:color/transparent" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/pop_play" android:drawableTop="@drawable/video_pic_64" android:layout_weight="1"/>
+        <Button android:id="@+id/share_local_singleVideo" android:background="@android:color/transparent" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/pop_share" android:drawableTop="@drawable/share_pic_64" android:layout_weight="1"/>
+        <Button android:id="@+id/delete_local_singleVideo" android:background="@android:color/transparent" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/pop_delete" android:drawableTop="@drawable/delete_pic_64" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

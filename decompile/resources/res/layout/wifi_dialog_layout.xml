@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="#80000000" app:cardCornerRadius="8dp" app:cardElevation="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/dialog_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="38dp" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textColor="#ffcc00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:text="@string/select_device" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ProgressBar android:id="@+id/pb_wifi_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Widget.ProgressBar.Small"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recy_list_wifi" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="38dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

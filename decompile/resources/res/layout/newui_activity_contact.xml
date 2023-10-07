@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_90">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@+id/tv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_24" android:text="@string/newui_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_26" android:text="@string/newui_question" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/newui_stroke_gray" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+            <EditText android:textSize="@dimen/sp_16" android:textColor="@color/black" android:textColorHint="@color/gray" android:id="@+id/et_title" android:background="@null" android:padding="@dimen/dp_10" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:hint="@string/newui_title" android:layout_weight="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_20" android:text="@string/newui_title_tip" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <EditText android:textSize="@dimen/sp_12" android:textColor="@color/black" android:textColorHint="@color/gray" android:gravity="left" android:id="@+id/et_content" android:background="@null" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_20" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_20" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_20" android:hint="@string/newui_content_tip" android:layout_weight="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <Button android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@+id/btn_send" android:background="@drawable/newui_solid_accent" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_20" android:text="@string/newui_send"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/pop_ll" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <CheckedTextView android:textColor="@color/tv_channel_selector" android:gravity="center" android:id="@+id/tv_center" android:background="@drawable/tv_bg_check_selector" android:padding="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="0dp" android:text="Center" android:layout_weight="1" android:textAlignment="center"/>
+        <View android:id="@+id/divider" android:background="@color/colorPrimary_blue" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textColor="@color/tv_channel_selector" android:gravity="center" android:id="@+id/tv_multi" android:background="@drawable/tv_bg_check_selector" android:padding="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="0dp" android:text="Multi" android:layout_weight="1" android:textAlignment="center"/>
+        <View android:background="@color/colorPrimary_blue" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textColor="@color/tv_channel_selector" android:gravity="center" android:id="@+id/tv_spot" android:background="@drawable/tv_bg_check_selector" android:padding="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="0dp" android:text="Spot" android:layout_weight="1" android:textAlignment="center"/>
+        <View android:background="@color/colorPrimary_blue" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textColor="@color/tv_channel_selector" android:gravity="center" android:id="@+id/tv_fly" android:background="@drawable/tv_bg_check_selector" android:padding="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="0dp" android:text="Fly" android:layout_weight="1" android:textAlignment="center"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/frame_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/progress_one" android:paddingLeft="15dp" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="步骤1：点击下图中间遥控器图标开始校准。"/>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/progress_two" android:paddingLeft="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="步骤2：推动遥控器所有摇杆至上、下、左、右四个方向的最边缘位置并重复几次。"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/remote_calibrate_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/remote_throttle_full"/>
+        <ImageButton android:id="@+id/start_calibrate_ib" android:background="@drawable/remote_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp"/>
+        <ImageView android:id="@+id/remote_calibrate_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:src="@drawable/remote_throttle_full"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/progress_three" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="步骤3：拨动遥控器左右两侧的拨轮。"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/remote_roll_icon" android:background="@drawable/remote_roll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/remote_calibrate_roll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/remote_calibrate_roll"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/progress_four" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="步骤4：点击请求完成遥控器校准。"/>
+    <Button android:textSize="10sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/remote_calibrate_complete" android:background="@drawable/remote_spinner_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="完成校准"/>
+</LinearLayout>

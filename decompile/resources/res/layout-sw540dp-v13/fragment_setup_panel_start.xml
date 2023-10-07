@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center_vertical" android:id="@+id/setupTitle" android:background="@color/dark_title_bg" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/setup_radio_cal_title" style="@style/SetupTitle"/>
+    <TextView android:id="@+id/setupDesc" android:background="@drawable/mode_desc_rectangle" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setup_radio_cal_desc" style="@style/ModeDetailText"/>
+    <Button android:layout_gravity="center" android:id="@+id/buttonStart" android:background="@drawable/button_green_drawable" android:layout_width="@dimen/setup_action_button_width" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/button_setup_calibrate" style="@style/modeControl"/>
+</LinearLayout>

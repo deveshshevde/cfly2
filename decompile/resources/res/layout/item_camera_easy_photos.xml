@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fl_camera" android:background="@color/easy_photos_bar_primary" android:layout_width="0dp" android:layout_height="0dp" android:layout_margin="1.2dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="centerCrop" app:srcCompat="@drawable/ic_camera_easy_photos"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

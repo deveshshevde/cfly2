@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="15dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_cancel" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_des" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pick_image" android:drawableRight="@drawable/my_flight_downitemable" android:drawablePadding="3dp" android:layout_centerInParent="true"/>
+        <View android:layout_gravity="bottom" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/gridview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/footer_bar" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_ok" android:background="@drawable/global_blue_round" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginLeft="8dp" android:layout_marginRight="15dp" android:text="@string/button_setup_send" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

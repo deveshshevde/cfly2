@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ff232428" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layoutVideoArea" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <SurfaceView android:id="@+id/surfaceView" android:layout_width="match_parent" android:layout_height="208dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:keepScreenOn="true"/>
+        <ImageView android:id="@+id/ivCountDownBackground" android:visibility="invisible" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/pic_delay_count_down" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="48sp" android:textColor="@android:color/holo_red_dark" android:id="@+id/tvCountDownTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/grayArea" android:background="#66000000" android:visibility="invisible" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/surfaceView" android:layout_alignBottom="@+id/surfaceView"/>
+        <ImageView android:id="@+id/ivSavedSign" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/other_icon_ok" android:scaleType="centerCrop" android:layout_toLeftOf="@+id/tvPrompt" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/white" android:id="@+id/tvPrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layoutFragPort" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/main_frag_port"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layoutFragLand" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/main_frag_land"/>
+    </RelativeLayout>
+</RelativeLayout>

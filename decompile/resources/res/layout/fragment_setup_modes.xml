@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/opaque_white" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/configLayout">
+    <TextView android:id="@+id/SetupTitle" android:background="@color/dark_title_bg" android:layout_width="match_parent" android:layout_height="64dp" android:text="Flight modes" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/SetupTitle"/>
+    <TextView android:id="@+id/SetupHint" android:background="@color/light_title_bg" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/mode_switch" android:layout_below="@+id/SetupTitle" android:layout_alignParentLeft="true" style="@style/ModeDetailText"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mode_col1" android:layout_width="300dp" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:layout_below="@+id/SetupHint">
+        <com.xeagle.android.widgets.spinners.SpinnerSelfSelect android:entries="@array/RCQuickModes" android:id="@+id/spinnerCH5Modes" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="20dp"/>
+        <TextView android:id="@+id/RCModeHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel 5 input: 1600pwm" style="@style/ModeDetailText"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mode_col2" android:layout_width="220dp" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:layout_toRightOf="@+id/mode_col1" android:layout_alignTop="@+id/mode_col1">
+        <CheckBox android:id="@+id/CheckBoxSimpleMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="Simple"/>
+        <TextView android:id="@+id/RCSimpleHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:text="Remember orientation when arming copter and translate user input during flight." style="@style/ModeDetailText"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="220dp" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_toRightOf="@+id/mode_col2" android:layout_alignTop="@+id/mode_col1">
+        <CheckBox android:id="@+id/CheckBoxSuperSimpleMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Super Simple"/>
+        <TextView android:id="@+id/RCSuperSimpleHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:text="Update orientation relative to home when flying farther than 10 meters." style="@style/ModeDetailText"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/button2" android:background="@drawable/button_green_drawable" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Send" style="@style/modeControl"/>
+    </LinearLayout>
+</RelativeLayout>

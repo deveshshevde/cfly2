@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/frame_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/system_setdialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="10dp" android:layout_marginRight="2dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <TextView android:id="@+id/map_provider_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地图提供商" style="@style/SystemSettingText"/>
+                <RadioGroup android:orientation="horizontal" android:id="@+id/map_provider_rg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+                    <RadioButton android:textSize="12sp" android:textColor="@color/white" android:id="@+id/google_map_rb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:button="@null" android:text="谷歌地图" android:drawableLeft="@drawable/rb_switch_bg"/>
+                    <RadioButton android:textSize="14sp" android:textColor="@color/white" android:id="@+id/lbs_map_rb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="百度地图" android:drawableLeft="@drawable/rb_switch_bg"/>
+                </RadioGroup>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/system_setdialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="10dp" android:layout_marginRight="2dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:id="@+id/press_guide_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地图引导模式" style="@style/SystemSettingText"/>
+                <TextView android:textSize="10sp" android:textColor="#f7b9b8b8" android:id="@+id/press_guide_sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="长按地图引导无人机飞行" android:layout_centerInParent="true"/>
+                <com.xeagle.android.widgets.button.SwitchButton android:id="@+id/press_guide_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:kswAnimationDuration="300" app:kswBackDrawable="@drawable/ios_back_drawable" app:kswBackMeasureRatio="2" app:kswThumbDrawable="@drawable/miui_thumb_drawable" app:kswThumbMarginBottom="-2dp" app:kswThumbMarginLeft="-3dp" app:kswThumbMarginRight="-2dp" app:kswThumbMarginTop="0dp" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:id="@+id/auto_pan_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地图移动" style="@style/SystemSettingText"/>
+                <TextView android:textSize="10sp" android:textColor="#f7b9b8b8" android:gravity="center" android:id="@+id/auto_pan_sp" android:background="@drawable/edittext_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disabled" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <TextView android:gravity="center_vertical" android:id="@+id/flight_path_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="飞行路径尺寸" style="@style/SystemSettingText"/>
+                <TextView android:textSize="10sp" android:textColor="#f7b9b8b8" android:gravity="center" android:id="@+id/flight_paht_sp" android:background="@drawable/edittext_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500(设为0以禁用路径显示)" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

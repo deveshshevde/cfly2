@@ -1,0 +1,42 @@
+package com.xeagle.android.login.retrofitLogin;
+
+public class CameraGlobal {
+    public static final String ACTION_CLIENT_ADD = "action.client.ADD";
+    public static final String ACTION_CLIENT_REMOVE = "action.client.REMOVE";
+    public static final int AMBA_CAMERA = 1;
+    public static final String BASE_URL = "http://172.50.10.1:8082/";
+    public static final int CAMERA_MODE = 2;
+    public static final int DELETE_FILE = 4003;
+    public static final String GET_Api = "api/getdeviceinfo/";
+    public static final int GET_DEVICE_INFO = 2002;
+    public static final int GET_MENU_ITEM = 3031;
+    public static final int GET_RECORD_STATUS = 2005;
+    public static final int GET_RECORD_TIME = 2003;
+    public static final int GET_SDCARD_STATUS = 2004;
+    public static final int GET_VERSION = 2001;
+    public static final String HTTP_FILE = "http://172.50.10.1:8082/tmp/sqlite/sunxi.db";
+    public static final String SET_Api = "api/setdeviceinfo/";
+    public static final int SET_CONTRAST = 1018;
+    public static final int SET_DATE = 3005;
+    public static final int SET_DELETE_FILE = 4003;
+    public static final int SET_FORMAT_SDCARD = 1013;
+    public static final int SET_LIGHT_FRQUENCR = 1012;
+    public static final int SET_LOOPRECORD_TIME = 1002;
+    public static final int SET_PHOTO_RESOLUTION = 1020;
+    public static final int SET_REMOTERECORD_SWITCH = 1100;
+    public static final int SET_REMOTE_TAKEPHOTO = 1101;
+    public static final int SET_SATURATION = 1017;
+    public static final int SET_TIME = 3006;
+    public static final int SET_TIMESTAMP = 1022;
+    public static final int SET_VIDEORECORD_TYPE = 1003;
+    public static final int SET_VIDEO_BALANCE = 1016;
+    public static final int SET_VIDEO_EXPROTION = 1004;
+    public static final int SET_VIDEO_RESOLUTION = 1001;
+    public static final int SET_WIFI_PASS = 3004;
+    public static final int SET_WIFI_SSID = 3003;
+    public static final int SHUT_RTSP = 1102;
+    public static final int SOCHIP_CAMERA = 2;
+    public static final int VIDEO_MODE = 1;
+    public static final String amba_rtsp_url = "rtsp://172.50.10.1/live";
+    public static final String sochip_rtsp_url = "rtsp://172.50.10.1:8554/ch01";
+}

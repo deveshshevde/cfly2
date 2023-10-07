@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_select_back" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/go_back_map" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:onClick="onBackPressed"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_select_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_back_pre" android:layout_centerHorizontal="true" android:onClick="onPhotoPressed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Photo" android:layout_below="@+id/iv_select_photo" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_select_cardphoto" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/remote_pic" android:layout_weight="1" android:onClick="onCardPhotoPressed"/>
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_select_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_back_pre" android:layout_centerHorizontal="true" android:onClick="onVideoPressed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video" android:layout_below="@+id/iv_select_video" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_select_cardvideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_back_pre" android:layout_centerHorizontal="true" android:onClick="onCardVideoPressed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Card Video" android:layout_below="@+id/iv_select_cardvideo" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

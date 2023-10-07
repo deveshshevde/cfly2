@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/relativeLayout01" android:background="@drawable/bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:textSize="16sp" android:orientation="vertical" android:id="@+id/LinearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <TextView android:id="@+id/textView_camera_info" android:background="#aaaaaa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_camera"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_camera_name"/>
+                    <TextView android:id="@+id/textView_camera_info_SSID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_camera_password"/>
+                    <TextView android:id="@+id/textView_camera_info_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <TextView android:id="@+id/textView_record_info" android:background="#aaaaaa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_record"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_cyclic_record"/>
+                    <TextView android:id="@+id/textView_record_info_cyclicRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_video_resolution"/>
+                    <TextView android:id="@+id/textView_record_info_recSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textView_record_info_autoRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_auto_record" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/checkBox_autoRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/RelativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textView_record_info_motionDetect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_motion_detection" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/CheckBox_motionDetect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/RelativeLayout3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textView_record_info_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_record_sound" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/CheckBox_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/RelativeLayout4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textView_record_info_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_show_date" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/CheckBox_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_preview_buffer"/>
+                    <TextView android:id="@+id/textView_network_cache" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <com.flypro.widget.MyTextView android:id="@+id/textView_photo_info" android:background="#aaaaaa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_photo"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_photo_resolution"/>
+                    <TextView android:id="@+id/textView_photo_info_photoSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <TextView android:id="@+id/textView_WDR_info" android:background="#aaaaaa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_video_quality"/>
+                <RelativeLayout android:id="@+id/RelativeLayout04" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textView_WDR" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="WDR" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/CheckBox_WDR" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <TextView android:id="@+id/textView_card_info" android:background="#aaaaaa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_memory_card"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_state"/>
+                    <TextView android:id="@+id/textView_card_info_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_free_space"/>
+                    <TextView android:id="@+id/textView_card_info_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textView_card_info_format" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_format"/>
+                    <TextView android:id="@+id/textView_card_format" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_start_format" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <TextView android:id="@+id/textView_adv_setting" android:background="#aaaaaa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_advanced_setting"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_auto_poweroff"/>
+                    <TextView android:id="@+id/textView_adv_setting_auto_shotdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_impact_sensor"/>
+                    <TextView android:id="@+id/textView_adv_setting_Gsensor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_tv_out"/>
+                    <TextView android:id="@+id/textView_adv_setting_TVformat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <TextView android:id="@+id/textView_system" android:background="#aaaaaa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_system"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_version"/>
+                    <TextView android:id="@+id/textView_system_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <TextView android:id="@+id/textView_AP_switch" android:background="#aaaaaa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_switch_mode"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/menu_current_mode"/>
+                    <TextView android:id="@+id/textView_AP_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="ZZZZ" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <Button android:textSize="20sp" android:id="@+id/button_system_reset" android:background="#ff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/menu_system_reset" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

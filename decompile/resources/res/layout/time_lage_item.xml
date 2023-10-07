@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_fly_time" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:background="#3e3a39" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="32dp">
+        <ImageView android:layout_width="28dp" android:layout_height="18dp" android:src="@drawable/time_lap2"/>
+        <TextView android:textSize="14sp" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mode_check"/>
+    </LinearLayout>
+    <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/rv_time1" android:layout_width="200dp" android:layout_height="50dp"/>
+    <LinearLayout android:gravity="center_vertical" android:background="#3e3a39" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp">
+        <ImageView android:layout_width="28dp" android:layout_height="18dp" android:src="@drawable/time_lap"/>
+        <TextView android:textSize="14sp" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/time_lag_set"/>
+    </LinearLayout>
+    <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/rv_time2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <LinearLayout android:gravity="center_vertical" android:background="#3e3a39" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="32dp">
+        <ImageView android:layout_width="28dp" android:layout_height="18dp" android:src="@drawable/time_lap3"/>
+        <TextView android:textSize="14sp" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/new_video_at_time"/>
+    </LinearLayout>
+    <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_time3" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tvAtTime" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

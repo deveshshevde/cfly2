@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/app_settings">
+        <ListPreference android:entries="@array/TelemetryConnectionTypes" android:title="@string/pref_connection_type" android:key="@string/pref_connection_type_key" android:summary="@string/pref_connection_type_summary" android:defaultValue="USB" android:entryValues="@array/TelemetryConnectionTypes"/>
+        <PreferenceScreen android:title="@string/pref_ui" android:key="pref_ui">
+            <PreferenceCategory android:title="@string/pref_title_language">
+                <CheckBoxPreference android:title="@string/pref_ui_language_english" android:key="@string/pref_ui_language_english_key" android:summary="@string/pref_ui_language_english_summary" android:defaultValue="false"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/pref_title_screen" android:key="pref_connection_actions">
+                <CheckBoxPreference android:title="@string/pref_keep_screen_bright" android:key="@string/pref_keep_screen_bright_key" android:summary="@string/pref_keep_screen_bright_summary" android:defaultValue="true"/>
+                <CheckBoxPreference android:title="@string/pref_lock_screen_orientation" android:key="pref_lock_screen_orientation" android:summary="@string/pref_lock_screen_orientation_summary" android:defaultValue="true"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/pref_maps_title" android:key="@string/pref_maps_category_key">
+                <ListPreference android:title="@string/pref_maps_providers_title" android:key="@string/pref_maps_providers_key" android:summary="@string/pref_maps_providers_summary"/>
+                <Preference android:title="@string/pref_map_provider_settings_title" android:key="@string/pref_map_provider_settings_key" android:summary="@string/pref_map_provider_settings_summary"/>
+                <CheckBoxPreference android:title="@string/pref_ui_realtime_footprints_title" android:key="@string/pref_ui_realtime_footprints_key" android:summary="@string/pref_ui_realtime_footprints_summary" android:defaultValue="false"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/pref_title_notifications">
+                <CheckBoxPreference android:title="@string/pref_permanent_notification_title" android:key="@string/pref_permanent_notification_key" android:summary="@string/pref_permanent_notification_summary" android:defaultValue="true"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/pref_title_tts">
+                <CheckBoxPreference android:title="@string/pref_enable_tts" android:key="@string/pref_enable_tts_key" android:summary="@string/pref_enable_tts_summary" android:defaultValue="true"/>
+                <PreferenceScreen android:title="@string/pref_title_tts_periodic_status">
+                    <PreferenceCategory android:title="@string/pref_title_tts_periodic_status" android:key="@string/pref_tts_periodic_key" android:summary="@string/pref_tts_periodic_summary">
+                        <ListPreference android:entries="@array/tts_periodic_period" android:title="@string/pref_tts_periodic_period" android:key="@string/pref_tts_periodic_period_key" android:summary="@string/pref_tts_periodic_period_summary" android:defaultValue="0" android:entryValues="@array/tts_periodic_period_values"/>
+                        <CheckBoxPreference android:title="@string/pref_tts_periodic_bat_volt" android:key="@string/pref_tts_periodic_bat_volt_key" android:summary="@string/pref_tts_periodic_bat_volt_summary" android:defaultValue="true"/>
+                        <CheckBoxPreference android:title="@string/pref_tts_periodic_alt" android:key="@string/pref_tts_periodic_alt_key" android:summary="@string/pref_tts_periodic_alt_summary" android:defaultValue="true"/>
+                        <CheckBoxPreference android:title="@string/pref_tts_periodic_airspeed" android:key="@string/pref_tts_periodic_airspeed_key" android:summary="@string/pref_tts_periodic_airspeed_summary" android:defaultValue="true"/>
+                        <CheckBoxPreference android:title="@string/pref_tts_periodic_rssi" android:key="@string/pref_tts_periodic_rssi_key" android:summary="@string/pref_tts_periodic_rssi_summary" android:defaultValue="true"/>
+                    </PreferenceCategory>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="@string/pref_title_tts_warnings">
+                    <PreferenceCategory android:title="@string/pref_title_tts_warnings">
+                        <CheckBoxPreference android:title="@string/pref_tts_warning_400ft_ceiling_exceeded" android:key="@string/pref_tts_warning_400ft_ceiling_exceeded_key" android:summary="@string/pref_tts_warning_400ft_ceiling_exceeded_summary" android:defaultValue="true"/>
+                        <CheckBoxPreference android:title="@string/pref_tts_warning_low_signal_strength" android:key="@string/pref_tts_warning_low_signal_key" android:summary="@string/pref_tts_warning_low_signal_strength_summary" android:defaultValue="false"/>
+                        <CheckBoxPreference android:title="@string/pref_tts_warning_lost_signal" android:key="@string/pref_tts_warning_lost_signal_key" android:summary="@string/pref_tts_warning_lost_signal_summary" android:defaultValue="true"/>
+                        <CheckBoxPreference android:title="@string/pref_tts_warning_autopilot_warnings" android:key="@string/pref_tts_warning_autopilot_warnings_key" android:summary="@string/pref_tts_warning_autopilot_warnings_summary" android:defaultValue="true"/>
+                    </PreferenceCategory>
+                </PreferenceScreen>
+                <CheckBoxPreference android:title="@string/pref_request_max_volume" android:key="@string/pref_request_max_volume_key" android:defaultValue="false"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/pref_misc_title">
+                <PreferenceScreen android:title="@string/pref_dialogs_title" android:key="@string/pref_dialogs_key">
+                    <ListPreference android:entries="@array/preference_dialog_entry" android:title="@string/pref_warn_on_arm_title" android:key="@string/pref_warn_on_arm_key" android:defaultValue="@string/pref_dialog_entry_ask" android:entryValues="@array/preference_dialog_entry"/>
+                    <ListPreference android:entries="@array/preference_dialog_entry" android:title="@string/pref_auto_insert_mission_takeoff_rtl_land_title" android:key="@string/pref_auto_insert_mission_takeoff_rtl_land_key" android:defaultValue="@string/pref_dialog_entry_ask" android:entryValues="@array/preference_dialog_entry"/>
+                    <ListPreference android:entries="@array/preference_dialog_entry" android:title="@string/dialog_confirm_take_off_in_auto_title" android:key="@string/pref_warn_on_takeoff_in_auto_key" android:defaultValue="@string/pref_dialog_entry_ask" android:entryValues="@array/preference_dialog_entry"/>
+                    <ListPreference android:entries="@array/preference_dialog_entry" android:title="@string/pref_dronie_creation_title" android:key="@string/pref_warn_on_dronie_creation_key" android:defaultValue="@string/pref_dialog_entry_ask" android:entryValues="@array/preference_dialog_entry"/>
+                </PreferenceScreen>
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Droneshare" android:key="pref_mavlink_droneshare">
+            <EditTextPreference android:title="@string/pref_dshare_username_title" android:key="@string/pref_dshare_username_key" android:summary="@string/if_that_user_does_not_exist_it_will_be_created" android:defaultValue="" android:dialogTitle="@string/droneshare_username" android:inputType="textEmailAddress"/>
+            <EditTextPreference android:title="@string/pref_dshare_password_title" android:key="@string/pref_dshare_password_key" android:summary="@string/enter_or_pick_a_password" android:defaultValue="" android:dialogTitle="@string/droneshare_password" android:inputType="textPassword"/>
+            <CheckBoxPreference android:title="@string/droneshare_enabled" android:key="@string/pref_dshare_enabled_key" android:summary="@string/do_you_want_to_use_droneshare_" android:defaultValue="true"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/pref_advanced" android:key="pref_advanced">
+            <ListPreference android:entries="@array/VehicleType" android:title="@string/pref_vehicle_type" android:key="@string/pref_vehicle_type_key" android:summary="@string/pref_vehicle_type_summary" android:defaultValue="ArduCopter" android:entryValues="@array/VehicleType"/>
+            <PreferenceScreen android:title="@string/pref_connection" android:key="pref_connection">
+                <PreferenceCategory android:title="@string/pref_usb" android:key="pref_usb">
+                    <ListPreference android:entries="@array/TelemetryBaudTypes" android:title="@string/pref_baud_type" android:key="@string/pref_baud_type_key" android:summary="@string/pref_baud_type_summary" android:defaultValue="57600" android:entryValues="@array/TelemetryBaudTypes"/>
+                </PreferenceCategory>
+                <PreferenceCategory android:title="@string/pref_server" android:key="pref_server">
+                    <EditTextPreference android:gravity="center" android:title="@string/pref_server_ip" android:key="@string/pref_server_ip_key" android:defaultValue="192.168.40.100"/>
+                    <EditTextPreference android:gravity="center" android:title="@string/pref_server_port" android:key="@string/pref_server_port_key" android:defaultValue="9761" android:inputType="number"/>
+                </PreferenceCategory>
+                <PreferenceCategory android:title="@string/pref_server_udp" android:key="pref_server_udp">
+                    <EditTextPreference android:gravity="center" android:title="@string/pref_udp_server_port" android:key="@string/pref_udp_server_port_key" android:defaultValue="14550" android:inputType="number"/>
+                </PreferenceCategory>
+                <PreferenceCategory android:title="@string/pref_bluetooth" android:key="pref_bluetooth">
+                    <org.droidplanner.android.dialogs.ClearBTDialogPreference android:gravity="center" android:title="@string/pref_forget_bluetooth_device_address" android:key="pref_bluetooth_device_address" android:defaultValue="" android:dialogMessage="@string/pref_forget_bluetooth_device_address_confirm" android:positiveButtonText="@string/pref_bluetooth_forget"/>
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="@string/pref_mavlink_rates" android:key="pref_mavlink_rates" android:summary="@string/pref_mavlink_rates_summary">
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_ext_stat" android:key="pref_mavlink_stream_rate_ext_stat" android:defaultValue="2" android:inputType="number"/>
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_extra1" android:key="pref_mavlink_stream_rate_extra1" android:defaultValue="10" android:inputType="number"/>
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_extra2" android:key="pref_mavlink_stream_rate_extra2" android:defaultValue="2" android:inputType="number"/>
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_extra3" android:key="pref_mavlink_stream_rate_extra3" android:defaultValue="2" android:inputType="number"/>
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_position" android:key="pref_mavlink_stream_rate_position" android:defaultValue="3" android:inputType="number"/>
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_RC_override" android:key="pref_mavlink_stream_rate_RC_override" android:defaultValue="50" android:inputType="number"/>
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_rc_channels" android:key="pref_mavlink_stream_rate_rc_channels" android:defaultValue="5" android:inputType="number"/>
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_raw_sensors" android:key="pref_mavlink_stream_rate_raw_sensors" android:defaultValue="2" android:inputType="number"/>
+                <EditTextPreference android:gravity="center" android:title="@string/pref_mavlink_stream_rate_raw_controller" android:key="pref_mavlink_stream_rate_raw_controller" android:defaultValue="3" android:inputType="number"/>
+            </PreferenceScreen>
+            <PreferenceCategory android:title="@string/pref_flight_data" android:key="pref_flight_data">
+                <EditTextPreference android:gravity="center" android:title="@string/pref_max_flight_path_size" android:key="@string/pref_max_flight_path_size_key" android:summary="@string/pref_max_flight_path_size_summary" android:defaultValue="500" android:inputType="number"/>
+                <CheckBoxPreference android:title="@string/pref_ui_gps_hdop_title" android:key="@string/pref_ui_gps_hdop_key" android:summary="@string/pref_ui_gps_hdop_summary" android:defaultValue="false"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/pref_pebble">
+                <Preference android:title="@string/pref_pebble_install_watchapp" android:key="@string/pref_pebble_install_key"/>
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/usage_statistics">
+        <CheckBoxPreference android:enabled="true" android:title="@string/pref_usage_statistics_title" android:key="@string/pref_usage_statistics_key" android:summary="@string/pref_usage_statistics_summary" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about">
+        <Preference android:persistent="false" android:enabled="false" android:title="@string/version" android:selectable="false" android:key="@string/pref_version_key" android:shouldDisableView="false"/>
+        <Preference android:persistent="false" android:enabled="false" android:title="@string/firmware_version" android:selectable="false" android:key="@string/pref_firmware_version_key" android:shouldDisableView="false"/>
+        <Preference android:persistent="false" android:enabled="false" android:title="@string/mavlink_version" android:selectable="false" android:key="@string/pref_mavlink_version_key" android:shouldDisableView="false"/>
+        <Preference android:persistent="false" android:enabled="false" android:title="@string/storage_folder" android:selectable="false" android:key="@string/pref_storage_key" android:shouldDisableView="false"/>
+        <PreferenceScreen android:title="Licenses" android:summary="Libraries (and it&apos;s licenses) used in this project">
+            <Preference android:persistent="false" android:enabled="false" android:title="AndroidSlidingUpPanel" android:selectable="false" android:key="@string/pref_storage_key" android:summary="Apache v2" android:shouldDisableView="false"/>
+            <Preference android:persistent="false" android:enabled="false" android:title="jmapviewer" android:selectable="false" android:key="@string/pref_storage_key" android:summary="GPLv2" android:shouldDisableView="false"/>
+            <Preference android:persistent="false" android:enabled="false" android:title="Mapbox Android SDK" android:selectable="false" android:key="@string/pref_storage_key" android:summary="Apache v2" android:shouldDisableView="false"/>
+            <Preference android:persistent="false" android:enabled="false" android:title="usb-serial-for-android" android:selectable="false" android:key="@string/pref_storage_key" android:summary="LGPLv3" android:shouldDisableView="false"/>
+            <Preference android:persistent="false" android:enabled="false" android:title="HorizontalVariableListView" android:selectable="false" android:key="@string/pref_storage_key" android:summary="Apache v2" android:shouldDisableView="false"/>
+            <Preference android:persistent="false" android:enabled="false" android:title="Google Play Services" android:selectable="false" android:key="@string/pref_storage_key" android:summary="" android:shouldDisableView="false"/>
+            <Preference android:persistent="false" android:enabled="false" android:title="PebbleKit" android:selectable="false" android:key="@string/pref_storage_key" android:summary="" android:shouldDisableView="false"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

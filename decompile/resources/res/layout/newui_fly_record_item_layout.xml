@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_record" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="80dp" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2">
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/tv_fly_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23:00:00" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray" android:ellipsize="end" android:id="@+id/tv_fly_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="2021-03-13" android:maxLines="1"/>
+        </LinearLayout>
+        <TextView android:textSize="18sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_fly_mileage" android:layout_width="0dp" android:layout_height="wrap_content" android:text="4645.56m" android:maxLines="1" android:layout_weight="1.5"/>
+        <TextView android:textSize="18sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_fly_duration" android:layout_width="0dp" android:layout_height="wrap_content" android:text="938" android:maxLines="1" android:layout_weight="1.2"/>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_width="30dp" android:layout_height="16dp" android:src="@drawable/newui_dark_right"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_not_upload" android:visibility="gone" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" android:src="@drawable/iv_not_upload" android:scaleType="fitCenter" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintTop_toBottomOf="@+id/ll_record"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

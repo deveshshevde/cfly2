@@ -1,0 +1,14 @@
+{
+  "relay_firmware": [{
+    "content": "更新1.5.0-20220611中继",
+    "md5": "ee173f9632de4e86c56c8fca521eb8f0",
+    "firmware_version": "1.5.0-20220611-1",
+    "file_size": "5.5MB"
+  }
+  ,{
+    "content": "更新1.6.0-20220415中继",
+    "md5": "5e5135ba31da3ce306b66610f59f6970",
+    "firmware_version": "1.6.0-20220422-1",
+    "file_size": "5.5MB"
+  }]
+}

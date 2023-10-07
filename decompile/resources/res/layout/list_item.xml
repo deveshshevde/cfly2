@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="#4c4cfe" android:id="@+id/grid_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="12_45" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tool_bar_operate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="16sp" android:gravity="center_vertical" android:id="@+id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/cancel"/>
+            <TextView android:textSize="16sp" android:gravity="center_vertical" android:id="@+id/delete_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/delete" android:drawableLeft="@drawable/delete_file"/>
+            <TextView android:textSize="14sp" android:gravity="center_vertical" android:id="@+id/select_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_selectAll" android:drawableLeft="@drawable/select_all_nor"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.xeagle.android.vjoystick.gallery.ScrollGridView android:id="@+id/gridView" android:layout_width="match_parent" android:layout_height="match_parent" android:numColumns="4"/>
+</LinearLayout>

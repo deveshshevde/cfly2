@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_90">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@+id/tv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_24" android:text="@string/newui_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_26" android:text="@string/newui_more" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/newui_stroke_gray" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rl_contact" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="@string/newui_question" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_25" android:text="@string/newui_contact" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:layout_marginLeft="@dimen/dp_4" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/newui_gray_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:id="@+id/rl_version" android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="@string/newui_version" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray" android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="v2.0" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+</LinearLayout>

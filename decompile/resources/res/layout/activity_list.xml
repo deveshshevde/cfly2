@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:background="@drawable/bg_list" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/refresh_layout" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/custom_list" android:layout_width="match_parent" android:layout_height="match_parent" android:dividerHeight="1dp"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/LinearLayout1" android:background="#fb209c67" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_movie" android:background="@drawable/file_movie" android:layout_width="60dp" android:layout_height="60dp"/>
+            <Button android:id="@+id/button_photo" android:background="@drawable/file_image" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loadingPanel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+    <ImageButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/fab_bottom" android:background="@drawable/fab" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@drawable/bottom_set" android:contentDescription="@string/fab_description"/>
+    <ImageButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/fab_top" android:background="@drawable/fab" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@drawable/top_set" android:contentDescription="@string/fab_description"/>
+</FrameLayout>

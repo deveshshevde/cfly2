@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/mMediaList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="38dp" android:dividerHeight="1dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/LinearLayout1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="38dp" app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout android:id="@+id/layout_list_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_list_top_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/go_back_map" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/dialog_title" android:id="@+id/tv_list_top_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:layout_centerInParent="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tool_bar_operate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="16sp" android:gravity="center_vertical" android:id="@+id/delete_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/delete" android:drawableLeft="@drawable/delete_file"/>
+                <TextView android:textSize="16sp" android:gravity="center_vertical" android:id="@+id/select_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_selectAll" android:drawableLeft="@drawable/select_all_nor"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ImageButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/fab_bottom" android:background="@drawable/fab" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@drawable/bottom_set" android:contentDescription="@string/fab_description"/>
+    <ImageButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/fab_top" android:background="@drawable/fab" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@drawable/top_set" android:contentDescription="@string/fab_description"/>
+</FrameLayout>

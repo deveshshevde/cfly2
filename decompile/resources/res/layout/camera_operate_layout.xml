@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton android:id="@+id/camera_state" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/level_work_mode" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/camera_rl_left" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/camera_state" android:layout_alignLeft="@+id/camera_state" android:layout_alignStart="@+id/camera_state">
+        <ImageButton android:id="@+id/button_photo_album" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_back_btn"/>
+        <ImageButton android:id="@+id/button_operate" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/photo_start_btn_pre" android:layout_below="@+id/button_photo_album"/>
+        <ImageButton android:id="@+id/button_menu_camera" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/camera_setting_btn" android:layout_below="@+id/button_operate"/>
+    </RelativeLayout>
+</RelativeLayout>

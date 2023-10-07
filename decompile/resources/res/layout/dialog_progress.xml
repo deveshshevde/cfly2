@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="@dimen/pop_dialog_width" android:layout_height="wrap_content">
+    <View style="@style/dialog_title_line"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+        <TextView android:textSize="18sp" android:textColor="@color/dialog_item_text" android:gravity="center_horizontal" android:id="@+id/tvDialogMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp"/>
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pbDialogProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:indeterminateDrawable="@drawable/hi_progress" style="?android:attr/progressBarStyleLarge"/>
+        <ProgressBar android:id="@+id/download_progressbar" android:layout_width="250dp" android:layout_height="4dp" android:layout_marginBottom="53dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/rect_progress" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+    <View style="@style/dialog_item_line"/>
+</LinearLayout>

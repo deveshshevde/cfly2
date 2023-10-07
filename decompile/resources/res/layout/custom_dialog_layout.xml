@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/player_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_dlg" android:background="@drawable/player_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/title_dlg_iv" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/btn_star" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <TextView android:textColor="@color/white" android:id="@+id/title_dlg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="message title" android:layout_toRightOf="@+id/title_dlg_iv" android:layout_centerVertical="true" android:layout_toEndOf="@+id/title_dlg_iv"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/msg_dlg_rl" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textColor="@color/white" android:id="@+id/message_dlg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="message content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/divider_dlg" android:background="@color/greyText" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <Button android:textColor="@color/white" android:id="@+id/bt_delete" android:background="@drawable/bt_delete_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="delete" android:layout_alignParentLeft="true" android:layout_marginStart="15dp" android:layout_alignParentStart="true"/>
+        <Button android:textColor="@color/white" android:id="@+id/bt_play" android:background="@drawable/bt_play_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="play" android:layout_centerHorizontal="true"/>
+        <Button android:textColor="@color/white" android:id="@+id/bt_download" android:background="@drawable/bt_download_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="download" android:layout_alignParentRight="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

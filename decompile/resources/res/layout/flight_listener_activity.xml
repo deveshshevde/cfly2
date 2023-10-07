@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="90dp">
+        <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/tv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/newui_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="26sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="26dp" android:text="@string/newui_fly_record" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/newui_stroke_gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="1">
+            <TextView android:textSize="24sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/tv_fly_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_count"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="1">
+            <TextView android:textSize="24sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/tv_fly_mileage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray" android:id="@+id/tv_mileage_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_mileage_m"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="1">
+            <TextView android:textSize="24sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/tv_fly_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray" android:id="@+id/tv_duration_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_duration_s"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="20dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/newui_solid_dark_top" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="36dp">
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_date" android:layout_weight="1.2"/>
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_mileage" android:layout_weight="1.5"/>
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/newui_duration" android:layout_weight="1.2"/>
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newui_detail"/>
+        </LinearLayout>
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:background="@drawable/newui_bg_fly_record" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

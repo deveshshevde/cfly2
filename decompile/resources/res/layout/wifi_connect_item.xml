@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" app:cardBackgroundColor="#f9f5f4" app:cardCornerRadius="4dp" app:cardElevation="5dp" app:cardMaxElevation="4dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/item_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:id="@+id/wifi_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="C-FLY-Controller-111111" android:layout_toRightOf="@+id/wifi_selected" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/wifi_selected" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/icon_select" android:layout_alignParentLeft="true"/>
+        <ImageView android:id="@+id/wifi_level" android:background="@color/transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/top_icon_wifi_1" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

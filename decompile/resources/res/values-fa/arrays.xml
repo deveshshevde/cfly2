@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="action_low_battery">
+        <item>برگشت</item>
+        <item>فرود آمدن</item>
+    </array>
+    <array name="action_metering">
+        <item>مرکز</item>
+        <item>چند</item>
+        <item>نقطه</item>
+        <item>پرواز</item>
+    </array>
+    <array name="action_metering_value">
+        <item>مرکز</item>
+        <item>چند</item>
+        <item>نقطه</item>
+        <item>پرواز</item>
+    </array>
+    <array name="auto_shutdown_entries">
+        <item>بسته</item>
+        <item>1 دقیقه</item>
+        <item>5 دقیقه</item>
+        <item>10 دقیقه</item>
+        <item>30 دقیقه</item>
+        <item>60 دقیقه</item>
+    </array>
+    <array name="auto_shutdown_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="awb_value">
+        <item>خودکار (پیش فرض)</item>
+        <item>لامپ رشته ای</item>
+        <item>D4000</item>
+        <item>D5000</item>
+        <item>آفتابی</item>
+        <item>نیمه ابری</item>
+        <item>D9000</item>
+        <item>D10000</item>
+        <item>چراغ فلورسنت</item>
+        <item>اب</item>
+    </array>
+    <array name="awb_value_sochip">
+        <item>خودکار (پیش فرض)</item>
+        <item>آفتابی</item>
+        <item>نیمه ابری</item>
+        <item>لامپ رشته ای</item>
+        <item>چراغ فلورسنت</item>
+    </array>
+    <array name="awb_value_sochip_no">
+        <item>خودکار</item>
+        <item>آفتابی</item>
+        <item>نیمه ابری</item>
+        <item>لامپ رشته ای</item>
+        <item>چراغ فلورسنت</item>
+    </array>
+    <array name="boot_action_entries">
+        <item>هیچ اقدامی</item>
+        <item>ویدیو بوت</item>
+        <item>هنگام راه اندازی عکس بگیرید</item>
+    </array>
+    <array name="boot_action_values">
+        <item>بیکار</item>
+        <item>رکورد</item>
+        <item>تایم لپس</item>
+    </array>
+    <array name="burst_rate_entries">
+        <item>3 عکس در 1 ثانیه</item>
+        <item>5 عکس در ثانیه</item>
+        <item>6 عکس در 1 ثانیه</item>
+        <item>9 عکس در 3 ثانیه</item>
+        <item>18 عکس در 3 ثانیه</item>
+    </array>
+    <array name="burst_rate_values">
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="contrast_value_sochip">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0 (پیش فرض)</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="contrast_value_sochip_no">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="download_video_entries">
+        <item>HD</item>
+        <item>SD</item>
+    </array>
+    <array name="download_video_values">
+        <item>بزرگ</item>
+        <item>کم اهمیت</item>
+    </array>
+    <array name="editor_type">
+        <item>همه</item>
+        <item>ویرایشگر رایگان</item>
+        <item>ویرایش با یک کلیک</item>
+    </array>
+    <array name="effect_mode">
+        <item>عادی (پیش فرض)</item>
+        <item>رنگ آمیزی</item>
+        <item>قدیمی</item>
+        <item>منفی</item>
+        <item>سیاه و سفید</item>
+        <item>تقویت کننده</item>
+        <item>70 ویدیو</item>
+    </array>
+    <array name="ev_value">
+        <item>-2.0</item>
+        <item>-1.7</item>
+        <item>-1.3</item>
+        <item>-1.0</item>
+        <item>-0.7</item>
+        <item>-0.3</item>
+        <item>0.0 (پیش فرض)</item>
+        <item>+0.3</item>
+        <item>+0.7</item>
+        <item>+1.0</item>
+        <item>+1.3</item>
+        <item>+1.7</item>
+        <item>+2.0</item>
+    </array>
+    <array name="ev_value_sochip">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0 (پیش فرض)</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="ev_value_sochip_no">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="field_of_view_entries">
+        <item>150°</item>
+    </array>
+    <array name="field_of_view_values">
+        <item>150</item>
+    </array>
+    <array name="fov_value">
+        <item>زاویه دید زیاد (پیش‌فرض)</item>
+        <item>معمولی</item>
+        <item>زاویه دید کوچک</item>
+    </array>
+    <array name="frame_rate_ntsc_entries">
+        <item>30 فریم در ثانیه</item>
+        <item>60 فریم در ثانیه</item>
+    </array>
+    <array name="frame_rate_ntsc_values">
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="frame_rate_pal_entries">
+        <item>25 فریم در ثانیه</item>
+        <item>50 فریم در ثانیه</item>
+    </array>
+    <array name="frame_rate_pal_values">
+        <item>25</item>
+        <item>50</item>
+    </array>
+    <array name="image_resolution_entries">
+        <item>1920*1080P</item>
+        <item>1280*720P</item>
+    </array>
+    <array name="image_resolution_values">
+        <item>1080P</item>
+        <item>720P</item>
+    </array>
+    <array name="iso_value">
+        <item>خودکار (پیش فرض)</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+        <item>800</item>
+        <item>1600</item>
+    </array>
+    <array name="photo_resolution">
+        <item>5120*3840 (پیش‌فرض)</item>
+        <item>4832*2718</item>
+        <item>4192*3104</item>
+        <item>3648*2736</item>
+        <item>3840*2160</item>
+    </array>
+    <array name="photo_resolution_sochip">
+        <item>3840*2160</item>
+        <item>4800*2700 (پیش‌فرض)</item>
+        <item>5440*3060</item>
+    </array>
+    <array name="photo_resolution_sochip_no">
+        <item>3840*2160</item>
+        <item>4800*2700</item>
+        <item>5440*3060</item>
+    </array>
+    <array name="photo_watermark">
+        <item>خاموش (پیش فرض)</item>
+        <item>تاریخ</item>
+        <item>زمان</item>
+        <item>وقت قرار</item>
+    </array>
+    <array name="poweron_ui_mode_entries">
+        <item>ویدئو</item>
+        <item>عکس</item>
+        <item>عکس زمان دار</item>
+        <item>عکس تایم لپس</item>
+        <item>تیراندازی مداوم</item>
+    </array>
+    <array name="poweron_ui_mode_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="preview_video_entries">
+        <item>HD</item>
+        <item>SD</item>
+    </array>
+    <array name="preview_video_values">
+        <item>بزرگ</item>
+        <item>کم اهمیت</item>
+    </array>
+    <array name="saturation_value_sochip">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0 (پیش فرض)</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="saturation_value_sochip_no">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="scene_mode">
+        <item>عادی (پیش فرض)</item>
+        <item>فلاش</item>
+        <item>دید شب</item>
+        <item>ورزش ها</item>
+        <item>چشم انداز</item>
+        <item>پرتره</item>
+        <item>غروب آفتاب</item>
+    </array>
+    <array name="screen_auto_sleep_entries">
+        <item>بسته</item>
+        <item>1 دقیقه</item>
+        <item>3 دقیقه</item>
+        <item>5 دقیقه</item>
+    </array>
+    <array name="screen_auto_sleep_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </array>
+    <array name="screen_brightness_entries">
+        <item>100％</item>
+        <item>60％</item>
+        <item>30％</item>
+    </array>
+    <array name="screen_brightness_values">
+        <item>55</item>
+        <item>50</item>
+        <item>45</item>
+    </array>
+    <array name="timelapse_interval_entries">
+        <item>1 ثانیه</item>
+        <item>3 ثانیه</item>
+        <item>5 ثانیه</item>
+        <item>10 ثانیه</item>
+        <item>30 ثانیه</item>
+        <item>60 ثانیه</item>
+    </array>
+    <array name="timelapse_interval_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="timer_count_down_entries">
+        <item>1 ثانیه</item>
+        <item>3 ثانیه</item>
+        <item>5 ثانیه</item>
+        <item>10 ثانیه</item>
+        <item>30 ثانیه</item>
+        <item>60 ثانیه</item>
+    </array>
+    <array name="timer_count_down_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="usb_wifi_channel">
+        <item>بسته</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </array>
+    <array name="video_fps_value_ntsc_117">
+        <item>30</item>
+        <item>120</item>
+        <item>60</item>
+    </array>
+    <array name="video_mode_entries">
+        <item>NTSC</item>
+        <item>PAL</item>
+    </array>
+    <array name="video_mode_values">
+        <item>NTSC</item>
+        <item>PAL</item>
+    </array>
+    <array name="video_resolution">
+        <item>4K 30FPS (پیش‌فرض)</item>
+        <item>2.7K 30FPS</item>
+        <item>1080P 60FPS</item>
+        <item>1080P 30FPS</item>
+        <item>720P 60FPS</item>
+    </array>
+    <array name="video_resolution_entries_ntsc_117">
+        <item>4K2K/30fps</item>
+        <item>1080P/120fps</item>
+        <item>1080P/60fps</item>
+    </array>
+    <array name="video_resolution_entries_ntsc_34220">
+        <item>4K2K/30fps</item>
+        <item>1080P/120fps</item>
+        <item>1080P/60fps</item>
+    </array>
+    <array name="video_resolution_entries_pal_117">
+        <item>4K2K/25fps</item>
+        <item>1080P/120fps</item>
+        <item>1080P/50fps</item>
+    </array>
+    <array name="video_resolution_entries_pal_34220">
+        <item>4K2K/25fps</item>
+        <item>1080P/120fps</item>
+        <item>1080P/50fps</item>
+    </array>
+    <array name="video_resolution_sochip">
+        <item>3820*2160 (پیش‌فرض)</item>
+        <item>2688*1520</item>
+        <item>1920*1080</item>
+    </array>
+    <array name="video_resolution_sochip_no">
+        <item>4K</item>
+        <item>2.7K</item>
+        <item>1080P</item>
+    </array>
+    <array name="video_resolution_values_ntsc_117">
+        <item>4K2K</item>
+        <item>1080P</item>
+        <item>1080P</item>
+    </array>
+    <array name="video_resolution_values_ntsc_34220">
+        <item>4K2K_30</item>
+        <item>1080P_120</item>
+        <item>1080P_60</item>
+    </array>
+    <array name="video_resolution_values_pal_117">
+        <item>4K2K</item>
+        <item>1080P</item>
+        <item>1080P</item>
+    </array>
+    <array name="video_resolution_values_pal_34220">
+        <item>4K2K_25</item>
+        <item>1080P_120</item>
+        <item>1080P_50</item>
+    </array>
+    <array name="video_timelapse">
+        <item>خاموش (پیش فرض)</item>
+        <item>باز کن</item>
+    </array>
+    <array name="video_watermark">
+        <item>خاموش (پیش فرض)</item>
+        <item>تاریخ</item>
+        <item>زمان</item>
+        <item>وقت قرار</item>
+    </array>
+    <array name="water_value_sochip">
+        <item>باز کردن (پیش فرض)</item>
+        <item>بسته</item>
+    </array>
+    <array name="water_value_sochip_no">
+        <item>روشن کن</item>
+        <item>بسته</item>
+    </array>
+    <array name="wifi_channel">
+        <item>بسته</item>
+        <item>149</item>
+        <item>153</item>
+        <item>157</item>
+        <item>161</item>
+        <item>165</item>
+        <item>36</item>
+    </array>
+</resources>

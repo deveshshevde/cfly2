@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top|right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp">
+    <RelativeLayout android:id="@+id/map_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageButton android:id="@+id/my_location_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/user_location_bg" android:scaleType="fitCenter"/>
+        <ImageButton android:id="@+id/drone_location_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/drone_location_bg" android:scaleType="fitCenter" android:layout_toRightOf="@+id/my_location_button"/>
+        <ImageButton android:id="@+id/map_orientation_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/compass_editor_bg" android:scaleType="fitCenter" android:layout_toRightOf="@+id/drone_location_button"/>
+        <ImageButton android:id="@+id/map_type_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/map_nor" android:scaleType="fitCenter" android:layout_toRightOf="@+id/map_orientation_button"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_map_type" android:background="@drawable/map_type_selection_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_below="@+id/map_rl" android:layout_alignParentRight="true">
+        <RelativeLayout android:id="@+id/rl_plain" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.xeagle.android.widgets.MenuImageview.RoundImageView android:id="@+id/iv_plain" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="8dp" android:src="@drawable/map_plain" app:borderRadius="3dp" app:type="radial"/>
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标准" android:layout_below="@+id/iv_plain" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_statellite" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.xeagle.android.widgets.MenuImageview.RoundImageView android:id="@+id/iv_statellite" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="8dp" android:src="@drawable/map_statellite" app:borderRadius="3dp" app:type="radial"/>
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卫星" android:layout_below="@+id/iv_statellite" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_hybird" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.xeagle.android.widgets.MenuImageview.RoundImageView android:id="@+id/iv_hybird" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="8dp" android:src="@drawable/map_hybird" app:borderRadius="3dp" app:type="radial"/>
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="混合" android:layout_below="@+id/iv_hybird" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

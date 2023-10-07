@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#90000000" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingEnd="@dimen/dp_26">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_80" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_fly_setting" android:background="@color/transparency" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/newui_fly_settings_normal"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/ll_fly_avoidance_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_fly_avoidance" android:background="@color/transparency" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/ic_avoidance"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_rc_setting" android:background="@color/transparency" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/newui_rc_settings_normnal"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_battery_setting" android:background="@color/transparency" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/newui_battery_settings_normal"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/iv_fix_setting" android:background="@color/transparency" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/newui_fix_settings_normal"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <include layout="@layout/newui_fly_setting_layout"/>
+        <include layout="@layout/newui_rc_setting_layout"/>
+        <include layout="@layout/newui_battery_setting_layout"/>
+        <include layout="@layout/newui_other_setting_layout"/>
+        <include layout="@layout/drone_safe_setting_layout"/>
+        <include layout="@layout/newui_fly_avoidance_layout"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <RelativeLayout android:id="@+id/rl_newbie_avoidance" android:background="#ee222222" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" android:layout_marginTop="@dimen/dp_62">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/ic_avoidance"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/iv_newbie_avoidance" android:layout_width="310dp" android:layout_height="120dp" android:layout_marginLeft="@dimen/dp_80" android:layout_marginTop="@dimen/dp_68" android:src="@drawable/ic_newbie_avoidance"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_avoidance_guide" android:background="@drawable/bg_guide" android:paddingLeft="14dp" android:paddingTop="5dp" android:paddingRight="14dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_180" android:layout_marginTop="20dp" android:text="@string/turn_on_now" android:layout_below="@+id/iv_newbie_avoidance"/>
+    </RelativeLayout>
+</RelativeLayout>

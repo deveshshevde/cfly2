@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/dialog_content_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="#e6e6e6" android:id="@+id/dialog_input_title" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="请输入URL"/>
+    <EditText android:textSize="16sp" android:textColor="#e6e6e6" android:textColorHint="#a1a1a1" android:gravity="left" android:id="@+id/dialog_input_dialog_edit" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:minLines="4"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp">
+        <TextView android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="是否缓存"/>
+        <CheckBox android:id="@+id/dialog_input_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textSize="16sp" android:textColor="#e6e6e6" android:gravity="center" android:id="@+id/dialog_input_dialog_negative" android:background="@drawable/bt_round_bg" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="取消" android:layout_marginEnd="10dp"/>
+        <TextView android:textSize="16sp" android:textColor="#e6e6e6" android:gravity="center" android:id="@+id/dialog_input_dialog_postive" android:background="@drawable/bt_round_bg" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定"/>
+    </LinearLayout>
+</LinearLayout>

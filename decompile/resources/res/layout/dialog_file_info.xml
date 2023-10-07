@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="@dimen/pop_dialog_width" android:layout_height="wrap_content">
+    <View style="@style/dialog_title_line"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+        <TextView android:id="@+id/ibfilename" style="@style/dialog_file_info_text"/>
+        <TextView android:id="@+id/ibfilesize" style="@style/dialog_file_info_text"/>
+        <TextView android:id="@+id/ibmodifyTime" style="@style/dialog_file_info_text"/>
+        <TextView android:id="@+id/ibstoragepath" android:layout_marginBottom="16dp" style="@style/dialog_file_info_text"/>
+    </LinearLayout>
+    <View style="@style/dialog_item_line"/>
+</LinearLayout>

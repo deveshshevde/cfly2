@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:id="@+id/mapFragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="false" class="com.xeagle.android.fragments.LocatorMapFragment"/>
+    <com.xeagle.android.widgets.FitsSystemWindowsRelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/statusView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/editorMissionOverviewText">
+            <TextView android:id="@+id/latView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/editorMissionOverviewText"/>
+            <TextView android:id="@+id/lonView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/editorMissionOverviewText"/>
+            <TextView android:id="@+id/distanceView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/editorMissionOverviewText"/>
+            <TextView android:id="@+id/azimuthView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/editorMissionOverviewText"/>
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" layout="@layout/button_my_location"/>
+    </com.xeagle.android.widgets.FitsSystemWindowsRelativeLayout>
+    <com.xeagle.android.widgets.FitsSystemWindowsFrameLayout android:id="@+id/lowerWidgetContainer" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <fragment android:name="com.xeagle.android.fragments.LocatorListFragment" android:id="@+id/locatorListFragment" android:layout_width="match_parent" android:layout_height="@dimen/editor_mission_fragment_height"/>
+    </com.xeagle.android.widgets.FitsSystemWindowsFrameLayout>
+</RelativeLayout>

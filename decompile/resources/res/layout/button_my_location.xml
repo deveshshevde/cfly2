@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/location_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageButton android:id="@+id/my_location_button" android:src="@drawable/ic_location" style="@style/mapButton"/>
+    <ImageButton android:id="@+id/drone_location_button" android:src="@drawable/ic_navigate" android:scaleType="centerInside" style="@style/mapButton"/>
+    <ImageButton android:id="@+id/map_orientation_button" android:src="@drawable/ic_compass" style="@style/mapButton"/>
+    <ImageButton android:id="@+id/zoom_to_fit_button" android:visibility="gone" android:src="@drawable/ic_expand" android:contentDescription="@string/zoom_fit" style="@style/mapButton"/>
+</LinearLayout>

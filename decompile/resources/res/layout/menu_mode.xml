@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/info_bar_drawable" android:layout_width="120dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/menu_action_bg_top" android:scaleType="centerCrop"/>
+        <LinearLayout android:id="@+id/layoutRowModeVideo" style="@style/menu_item">
+            <ImageView android:src="@drawable/menu_icon_video" style="@style/menu_item_icon"/>
+            <TextView android:text="@string/mode_video" style="@style/menu_item_text"/>
+            <ImageView android:id="@+id/ivModeVideoSelected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowModePhoto" style="@style/menu_item">
+            <ImageView android:src="@drawable/menu_icon_camera" style="@style/menu_item_icon"/>
+            <TextView android:text="@string/mode_photo" style="@style/menu_item_text"/>
+            <ImageView android:id="@+id/ivModePhotoSelected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowModeBurst" style="@style/menu_item">
+            <ImageView android:src="@drawable/menu_icon_continuous" style="@style/menu_item_icon"/>
+            <TextView android:text="@string/mode_burst" style="@style/menu_item_text"/>
+            <ImageView android:id="@+id/ivModeBurstSelected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowModeTimelapse" style="@style/menu_item">
+            <ImageView android:src="@drawable/menu_icon_ontime" style="@style/menu_item_icon"/>
+            <TextView android:text="@string/mode_timelapse" style="@style/menu_item_text"/>
+            <ImageView android:id="@+id/ivModeTimelapseSelected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowModeTimer" style="@style/menu_item">
+            <ImageView android:src="@drawable/menu_icon_delay" style="@style/menu_item_icon"/>
+            <TextView android:text="@string/mode_timer" style="@style/menu_item_text"/>
+            <ImageView android:id="@+id/ivModeTimerSelected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowModeVideoTimelapse" style="@style/menu_item">
+            <ImageView android:src="@drawable/menu_icon_video" style="@style/menu_item_icon"/>
+            <TextView android:text="@string/mode_video_timelapse" style="@style/menu_item_text"/>
+            <ImageView android:id="@+id/ivModeVideoTimelapseSelected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowModeVideoLoop" style="@style/menu_item">
+            <ImageView android:src="@drawable/menu_icon_video_loop" style="@style/menu_item_icon"/>
+            <TextView android:text="@string/mode_video_loop" style="@style/menu_item_text"/>
+            <ImageView android:id="@+id/ivModeVideoLoopSelected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/menu_action_bg_bottom" android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@drawable/menu_triangle_right"/>
+    </LinearLayout>
+</LinearLayout>

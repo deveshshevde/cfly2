@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:src="@drawable/menu_triangle_left" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="116dp" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/menu_time_bg_top2" android:scaleType="centerCrop"/>
+        <LinearLayout android:id="@+id/layoutRowTimelapse_0" style="@style/menu_item">
+            <TextView android:text="@string/timelapse_0" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivTimelapse0Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowTimelapse_1" style="@style/menu_item">
+            <TextView android:text="@string/timelapse_1" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivTimelapse1Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowTimelapse_2" style="@style/menu_item">
+            <TextView android:text="@string/timelapse_2" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivTimelapse2Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowTimelapse_5" style="@style/menu_item">
+            <TextView android:text="@string/timelapse_5" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivTimelapse5Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowTimelapse_10" style="@style/menu_item">
+            <TextView android:text="@string/timelapse_10" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivTimelapse10Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowTimelapse_30" style="@style/menu_item">
+            <TextView android:text="@string/timelapse_30" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivTimelapse30Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutRowTimelapse_60" style="@style/menu_item">
+            <TextView android:text="@string/timelapse_60" style="@style/time_menu_item_text"/>
+            <ImageView android:id="@+id/ivTimelapse60Selected" style="@style/menu_item_selected"/>
+        </LinearLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/menu_time_bg_btm" android:scaleType="centerCrop"/>
+    </LinearLayout>
+</LinearLayout>

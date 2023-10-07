@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:id="@+id/rg_camera_mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textColor="@color/white" android:id="@+id/video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/mode_video" android:drawableLeft="@drawable/menu_video_timelapse_drawable" android:drawablePadding="4dp"/>
+            <RadioButton android:textColor="@color/white" android:id="@+id/photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/mode_photo" android:drawableLeft="@drawable/menu_photo_drawable" android:drawablePadding="4dp"/>
+            <RadioButton android:textColor="@color/white" android:id="@+id/burst" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/mode_burst" android:drawableLeft="@drawable/menu_burst_drawable" android:drawablePadding="4dp"/>
+            <RadioButton android:textColor="@color/white" android:id="@+id/timelapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/mode_timelapse" android:drawableLeft="@drawable/menu_timelapse_drawable" android:drawablePadding="4dp"/>
+            <RadioButton android:textColor="@color/white" android:id="@+id/timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/mode_timer" android:drawableLeft="@drawable/menu_timer_drawable" android:drawablePadding="4dp"/>
+            <RadioButton android:textColor="@color/white" android:id="@+id/video_timeplase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/mode_video_timelapse" android:drawableLeft="@drawable/menu_video_timelapse_drawable" android:drawablePadding="4dp"/>
+            <RadioButton android:textColor="@color/white" android:id="@+id/video_loop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/mode_video_loop" android:drawableLeft="@drawable/menu_video_loop_drawable" android:drawablePadding="4dp"/>
+        </RadioGroup>
+    </ScrollView>
+</LinearLayout>

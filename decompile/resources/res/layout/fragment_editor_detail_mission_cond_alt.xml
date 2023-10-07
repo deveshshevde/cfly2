@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/opaque_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xeagle.android.widgets.spinners.SpinnerSelfSelect android:entries="@array/ExampleWaypointType" android:id="@+id/spinnerWaypointType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <org.droidplanner.android.widgets.SeekBarWithText.SeekBarWithText android:id="@+id/waypointAltRate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp" app:inc="1" app:max="50" app:min="0" app:title="@string/waypoint_altrate" app:unit="m/s"/>
+            <org.droidplanner.android.widgets.SeekBarWithText.SeekBarWithText android:id="@+id/waypointFinalAlt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp" app:inc="1" app:max="200" app:min="0" app:title="@string/waypoint_finalaltitude" app:unit="m"/>
+            <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waypointInfo_CondAlt"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

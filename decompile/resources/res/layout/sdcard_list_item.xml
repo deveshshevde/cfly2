@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" app:cardBackgroundColor="#f9f5f4" app:cardCornerRadius="4dp" app:cardElevation="5dp" app:cardMaxElevation="4dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/item_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:id="@+id/file_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="2017/10/22" android:layout_centerVertical="true"/>
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/sdcard_delete" android:background="@color/transparency" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/delete_icon" android:layout_alignParentRight="true"/>
+        <com.xeagle.android.vjoystick.IWidgets.IImageButton android:id="@+id/sdcard_download" android:background="@color/transparency" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/download_icon" android:layout_toLeftOf="@+id/sdcard_delete"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

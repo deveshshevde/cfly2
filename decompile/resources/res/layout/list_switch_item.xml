@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/lst_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+    <CheckBox android:textColor="@color/white_grey" android:layout_gravity="center" android:id="@+id/lst_check" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:button="@drawable/check_bg" android:text="Switch" android:layout_weight="0.25"/>
+    <Switch android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/lst_switch" android:background="@drawable/bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:thumb="@color/deep_blue" android:switchMinWidth="25sp" android:thumbTextPadding="12dp"/>
+</LinearLayout>

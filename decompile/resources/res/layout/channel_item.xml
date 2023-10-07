@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cl_item" android:background="@drawable/bt_corner_blue" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_60">
+    <TextView android:textSize="9sp" android:textColor="@color/white" android:id="@+id/sub_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/current_select_channel" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@+id/main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_one" android:layout_centerInParent="true"/>
+</RelativeLayout>

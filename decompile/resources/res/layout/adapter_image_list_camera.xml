@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xeagle.android.login.common.RatioImage android:id="@+id/iv_thumb" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/camera_switch" android:scaleType="centerCrop" app:ri_ratio_height="1" app:ri_ratio_width="1" app:ri_standard="0"/>
+</FrameLayout>

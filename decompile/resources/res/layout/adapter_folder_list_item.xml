@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="68dp">
+    <ImageView android:id="@+id/iv_cover" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="@drawable/placeholder_normal" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_cover" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="#222222" android:ellipsize="end" android:id="@+id/tv_folder_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/all_images" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tv_image_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="(12222)"/>
+    </LinearLayout>
+    <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="80dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

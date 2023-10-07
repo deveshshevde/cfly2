@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="@dimen/pop_dialog_width" android:layout_height="match_parent">
+    <View style="@style/dialog_title_line"/>
+    <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/ibContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="33dp" android:layout_marginTop="22dp" android:layout_marginRight="33dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ibrename" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="50dp" android:layout_marginTop="22dp">
+        <RadioButton android:id="@+id/rbrename" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@null"/>
+        <TextView android:textSize="18sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:text="@string/auto_rename"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ibover_load" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="50dp" android:layout_marginBottom="25dp">
+        <RadioButton android:id="@+id/rboverload" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:checked="true" android:button="@null"/>
+        <TextView android:textSize="18sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:text="@string/over_load_file"/>
+    </LinearLayout>
+    <View style="@style/dialog_item_line"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="49dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="49dp">
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/ibUndo" android:background="@drawable/selector_dialog_button" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/skip" android:layout_weight="1"/>
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/ibConfirm" android:background="@drawable/selector_dialog_button" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="@color/dialog_item_divider" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

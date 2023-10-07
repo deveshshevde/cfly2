@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/dsHeaderNormal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dsinfo"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:autoLink="web" android:id="@+id/dsHeaderAlert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dsheader"/>
+    <RadioGroup android:id="@+id/pickAccount" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radioCreateNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/create_a_new_account"/>
+        <RadioButton android:id="@+id/radioLoginExisting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_to_an_existing_account"/>
+        <RadioButton android:id="@+id/radioNoDroneshare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/do_not_use_droneshare"/>
+    </RadioGroup>
+    <EditText android:id="@+id/username" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/username" android:inputType="textEmailAddress"/>
+    <EditText android:id="@+id/password" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/password" android:inputType="textPassword"/>
+    <EditText android:id="@+id/email" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email_address" android:inputType="textEmailAddress">
+        <requestFocus/>
+    </EditText>
+</LinearLayout>
